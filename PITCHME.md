@@ -21,19 +21,28 @@
   --> sandbox
 
 #HSLIDE 
-## comment creer un template pour une app
+## creer un template : analyse
 
 #VSLIDE
-  - split vue/metier 
-    - definit les etats
-    - definit les fixtures
+- discussion vue/metier 
 
 #VSLIDE
-  - creation du template
-    - decoupe en components 
+- definir les etats --> les fixtures
+
+#VSLIDE
+- decoupe en components 
+
+#HSLIDE
+## creer un template : implementation
+
+#VSLIDE
+- analyse macro
     - choix de la responsabilite parent/enfant  [grid VS card]
+    - decoupe de api/fixtures par composants
+
+#VSLIDE
+- realisation macro
     - creation des dom + css
-    - decoupe de apif/ixtures par composants
     - branchement des parents/enfants jusqu'au template
 
 #HSLIDE 

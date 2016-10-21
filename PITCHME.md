@@ -14,6 +14,12 @@
 #VSLIDE
  - -> react/virtual-dom/ -> html
 
+
+#HSLIDE 
+## installation
+  - slide: clone  npm i  npm start
+  --> sandbox
+
 #HSLIDE 
 ## comment creer un template pour une app
 
@@ -24,15 +30,11 @@
 
 #VSLIDE
   - creation du template
-    - decoupe en components
+    - decoupe en components 
+    - choix de la responsabilite parent/enfant  [grid VS card]
     - creation des dom + css
-    - definition --> api --> fixtures
-    - remonter du bas jusquau template
-
-#HSLIDE 
-## installation
-  - slide: npm i --> sandbox
-  - doc: npm link
+    - decoupe de apif/ixtures par composants
+    - branchement des parents/enfants jusqu'au template
 
 #HSLIDE 
 ## branchement sur les apps
@@ -41,8 +43,7 @@
 build
    - babel --> /lib /es
    - webpack ---> dist css/js
-   - bundler --> webpack
-
+   - bundler --> webpack 
 
 #VSLIDE
 - adapters --> mooc/www
@@ -58,3 +59,10 @@ build
 #VSLIDE  
 - webpack pour les apps
   code jsx
+
+#VSLIDE  
+- le branchement
+  - npm link
+  - publish npm + bump sur le projet
+  
+  

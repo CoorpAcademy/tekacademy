@@ -101,5 +101,31 @@ build
 - le branchement
   - npm link
   - publish npm + bump sur le projet
-  
-  
+
+#HSLIDE 
+##comment ca marche
+
+#VSLIDE  
+    lerna
+        npm test, npm run build, npm start
+        publish
+ 
+#VSLIDE   
+    treantjs
+        h -> generic vdom -> engine -> render
+        
+#VSLIDE   
+### tools        
+ es6
+ babel
+ webpack
+ css-modules
+
+#HSLIDE
+## Next
+- ameliorer la sandbox -> pick props, tags + recherche de composants
+- migrer les trucs existants
+- tout ce qui est nouveau en UI doit etre dans components
+
+
+

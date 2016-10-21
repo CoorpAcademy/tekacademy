@@ -5,14 +5,24 @@
 
 #VSLIDE
  - vue uniquement
- - vdom + jsx + cssmodules --> react/virtual-dom/ --> html
+ 
+#VSLIDE
+ - vdom + jsx + cssmodules 
+ code jsx (inline)
+ code style associe 
+ 
+#VSLIDE
+ - -> react/virtual-dom/ -> html
 
 #HSLIDE 
 ## comment creer un template pour une app
+
+#VSLIDE
   - split vue/metier 
     - definit les etats
     - definit les fixtures
 
+#VSLIDE
   - creation du template
     - decoupe en components
     - creation des dom + css
@@ -26,6 +36,13 @@
 
 #HSLIDE 
 ## branchement sur les apps
+
+#VSLIDE
+build
+   - babel --> /lib /es
+   - webpack ---> dist css/js
+   - bundler --> webpack
+
 
 #VSLIDE
 - adapters --> mooc/www

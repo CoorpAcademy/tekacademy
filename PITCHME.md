@@ -21,6 +21,15 @@
   --> sandbox
 
 #HSLIDE 
+## La bibliotheque
+
+#VSLIDE
+### structure
+    - design: `atom -> molecule -> organism -> template`
+    - behaviour
+
+
+#HSLIDE 
 ## creer un template : analyse
 
 #VSLIDE
@@ -36,14 +45,33 @@
 ## creer un template : implementation
 
 #VSLIDE
-- analyse macro
+### analyse macro
     - choix de la responsabilite parent/enfant  [grid VS card]
     - decoupe de api/fixtures par composants
 
 #VSLIDE
-- realisation macro
+### realisation macro
     - creation des dom + css
     - branchement des parents/enfants jusqu'au template
+
+#HSLIDE
+## creer un template : outils
+
+#VSLIDE
+### validation -> api-check
+ code conditions
+
+#VSLIDE 
+### factory + jsx
+ code createComponent
+ 
+ 
+#VSLIDE
+### css-modules
+        class composition
+        inline
+        ajout de classe sur un enfant
+        media queries
 
 #HSLIDE 
 ## branchement sur les apps

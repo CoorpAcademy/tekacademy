@@ -71,16 +71,18 @@ chris
   --> sandbox
   --> demo
 
-#HSLIDE julien
+#HSLIDE
 ## La bibliotheque
+julien
 
 #VSLIDE
 ### structure
     - atomic design: `atom -> molecule -> organism -> template`
     - behaviour
 
-#HSLIDE julien
+#HSLIDE
 ## creer un template : analyse
+julien
 
 #VSLIDE
 - discussion vue/metier définition des templates
@@ -91,8 +93,9 @@ chris
 #VSLIDE
 - decoupe en components mutualisés entre les templates
 
-#HSLIDE julien
+#HSLIDE
 ## creer un template : implementation
+julien
 
 #VSLIDE
 ### analyse macro
@@ -104,8 +107,9 @@ chris
     - creation des dom + css
     - branchement des parents/enfants jusqu'au template
 
-#HSLIDE chris
+#HSLIDE
 ## creer un template : outils
+chris
 
 #VSLIDE
 ### validation -> api-check
@@ -116,15 +120,18 @@ chris
  code createComponent
 
 
-#VSLIDE julien
+#VSLIDE
+julien
+
 ### css-modules
         class composition
         inline
         ajout de classe sur un enfant
         media queries
 
-#HSLIDE chris
+#HSLIDE
 ## branchement sur les apps
+chris
 
 #VSLIDE
 build
@@ -152,7 +159,8 @@ build
   - npm link
   - publish npm + bump sur le projet
 
-#HSLIDE julien
+#HSLIDE
+julien
 ## Next
 - ameliorer la sandbox -> pick props, tags + recherche de composants
 - migrer les trucs existants

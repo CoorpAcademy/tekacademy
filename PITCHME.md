@@ -41,18 +41,24 @@ https://gitpitch.com/coorpacademy/tekacademy/components
 ```
 
 #VSLIDE
- - treant -> vdom
+ `treant -> h`
 
 #VSLIDE
- - treant -> vdom -> engine
+ `treant -> h -> generic vdom`
 
 #VSLIDE
- - treant -> vdom -> react/virtual-dom/... -> html
+ `treant -> h -> generic vdom -> engine`
 
 #VSLIDE
-    lerna
-        npm test, npm run build, npm start
-        publish
+ `treant -> h -> generic vdom -> engine -> render`
+
+#VSLIDE
+  lerna --> packages
+    - components
+    - bundler
+    - treant-core
+    - treant-engines
+    - treant-adapter
 
 #VSLIDE
     treantjs

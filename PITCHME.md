@@ -26,16 +26,17 @@ https://gitpitch.com/coorpacademy/tekacademy/components
 
 #VSLIDE
  + cssmodules
-```
-  .default {
-    color: #B0BEC5;
-    margin-right: 2px;
-  }
 
-  .popular {
-    color: #FFB90D;
-    margin-right: 2px;
-  }
+```css
+.default {
+  color: #B0BEC5;
+  margin-right: 2px;
+}
+
+.popular {
+  color: #FFB90D;
+  margin-right: 2px;
+}
 ```
 
 #VSLIDE
@@ -56,7 +57,7 @@ https://gitpitch.com/coorpacademy/tekacademy/components
     treantjs
         h -> generic vdom -> engine -> render
 
-#HSLIDE 
+#HSLIDE
 ## installation
   - slide: clone  npm i  npm start
   --> sandbox

@@ -1,7 +1,7 @@
 # Components
 https://gitpitch.com/coorpacademy/tekacademy/components
 
-#HSLIDE
+#HSLIDE chris
 ## qu'est ce que cest
 
 #VSLIDE
@@ -47,33 +47,42 @@ https://gitpitch.com/coorpacademy/tekacademy/components
 #VSLIDE
  - treant -> vdom -> react/virtual-dom/... -> html
 
-#HSLIDE
+#VSLIDE
+    lerna
+        npm test, npm run build, npm start
+        publish
+
+#VSLIDE
+    treantjs
+        h -> generic vdom -> engine -> render
+
+#HSLIDE 
 ## installation
   - slide: clone  npm i  npm start
   --> sandbox
+  --> demo
 
-#HSLIDE
+#HSLIDE julien
 ## La bibliotheque
 
 #VSLIDE
 ### structure
-    - design: `atom -> molecule -> organism -> template`
+    - atomic design: `atom -> molecule -> organism -> template`
     - behaviour
 
-
-#HSLIDE
+#HSLIDE julien
 ## creer un template : analyse
 
 #VSLIDE
-- discussion vue/metier
+- discussion vue/metier définition des templates
 
 #VSLIDE
-- definir les etats --> les fixtures
+- definir les etats des templates --> les fixtures
 
 #VSLIDE
-- decoupe en components
+- decoupe en components mutualisés entre les templates
 
-#HSLIDE
+#HSLIDE julien
 ## creer un template : implementation
 
 #VSLIDE
@@ -86,7 +95,7 @@ https://gitpitch.com/coorpacademy/tekacademy/components
     - creation des dom + css
     - branchement des parents/enfants jusqu'au template
 
-#HSLIDE
+#HSLIDE chris
 ## creer un template : outils
 
 #VSLIDE
@@ -98,14 +107,14 @@ https://gitpitch.com/coorpacademy/tekacademy/components
  code createComponent
 
 
-#VSLIDE
+#VSLIDE julien
 ### css-modules
         class composition
         inline
         ajout de classe sur un enfant
         media queries
 
-#HSLIDE
+#HSLIDE chris
 ## branchement sur les apps
 
 #VSLIDE
@@ -134,26 +143,7 @@ build
   - npm link
   - publish npm + bump sur le projet
 
-#HSLIDE
-##comment ca marche
-
-#VSLIDE
-    lerna
-        npm test, npm run build, npm start
-        publish
-
-#VSLIDE
-    treantjs
-        h -> generic vdom -> engine -> render
-
-#VSLIDE
-### tools
- es6
- babel
- webpack
- css-modules
-
-#HSLIDE
+#HSLIDE julien
 ## Next
 - ameliorer la sandbox -> pick props, tags + recherche de composants
 - migrer les trucs existants

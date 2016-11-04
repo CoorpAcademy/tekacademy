@@ -10,33 +10,33 @@ https://gitpitch.com/coorpacademy/tekacademy/components
 
 #VSLIDE
  - vdom + jsx
-```js
-export default (treant, options) => {
-const {h} = treant;
+```
+   export default (treant, options) => {
+    const {h} = treant;
 
-return (props, children) => {
-  const state = props.popular ? style.popular : style.default;
+    return (props, children) => {
+      const state = props.popular ? style.popular : style.default;
 
-  return (
-    <span className={state}>★</span>
-  );
-};
-};
+      return (
+        <span className={state}>★</span>
+      );
+    };
+  };
 ```
 
 #VSLIDE
  + cssmodules
- ```css
-.default {
-  color: #B0BEC5;
-  margin-right: 2px;
-}
+```
+  .default {
+    color: #B0BEC5;
+    margin-right: 2px;
+  }
 
-.popular {
-  color: #FFB90D;
-  margin-right: 2px;
-}
- ```
+  .popular {
+    color: #FFB90D;
+    margin-right: 2px;
+  }
+```
 
 #VSLIDE
  - treant -> vdom

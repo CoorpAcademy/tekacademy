@@ -1,4 +1,5 @@
 # Components
+https://gitpitch.com/coorpacademy/tekacademy/components
 
 #HSLIDE
 ## qu'est ce que cest

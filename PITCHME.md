@@ -9,7 +9,7 @@ https://gitpitch.com/coorpacademy/tekacademy/components
  - bibliotheque de vdom
 
 #VSLIDE
- - vdom + jsx + cssmodules
+ - vdom + jsx
 ```js
    export default (treant, options) => {
     const {h} = treant;
@@ -25,6 +25,7 @@ https://gitpitch.com/coorpacademy/tekacademy/components
 ```
 
 #VSLIDE
+ + cssmodules
  ```css
   .default {
     color: #B0BEC5;
@@ -38,8 +39,13 @@ https://gitpitch.com/coorpacademy/tekacademy/components
  ```
 
 #VSLIDE
- - treant -> vdom -> react/virtual-dom -> html
+ - treant -> vdom
 
+#VSLIDE
+ - treant -> vdom -> engine
+
+#VSLIDE
+ - treant -> vdom -> react/virtual-dom/... -> html
 
 #HSLIDE
 ## installation

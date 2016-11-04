@@ -1,8 +1,9 @@
 # Components
 https://gitpitch.com/coorpacademy/tekacademy/components
 
-#HSLIDE chris
+#HSLIDE
 ## qu'est ce que cest
+chris
 
 #VSLIDE
  - vue uniquement

@@ -1,26 +1,51 @@
 # Components
 
-#HSLIDE 
-## qu'est ce que cest 
+#HSLIDE
+## qu'est ce que cest
 
 #VSLIDE
  - vue uniquement
- 
+ - bibliotheque de vdom
+
 #VSLIDE
- - vdom + jsx + cssmodules 
- code jsx (inline)
- code style associe 
- 
+ - vdom + jsx + cssmodules
+```js
+   export default (treant, options) => {
+    const {h} = treant;
+
+    return (props, children) => {
+      const state = props.popular ? style.popular : style.default;
+
+      return (
+        <span className={state}>★</span>
+      );
+    };
+  };
+```
+
 #VSLIDE
- - -> react/virtual-dom/ -> html
+ ```css
+  .default {
+    color: #B0BEC5;
+    margin-right: 2px;
+  }
+
+  .popular {
+    color: #FFB90D;
+    margin-right: 2px;
+  }
+ ```
+
+#VSLIDE
+ - treant -> vdom -> react/virtual-dom -> html
 
 
-#HSLIDE 
+#HSLIDE
 ## installation
   - slide: clone  npm i  npm start
   --> sandbox
 
-#HSLIDE 
+#HSLIDE
 ## La bibliotheque
 
 #VSLIDE
@@ -29,17 +54,17 @@
     - behaviour
 
 
-#HSLIDE 
+#HSLIDE
 ## creer un template : analyse
 
 #VSLIDE
-- discussion vue/metier 
+- discussion vue/metier
 
 #VSLIDE
 - definir les etats --> les fixtures
 
 #VSLIDE
-- decoupe en components 
+- decoupe en components
 
 #HSLIDE
 ## creer un template : implementation
@@ -61,11 +86,11 @@
 ### validation -> api-check
  code conditions
 
-#VSLIDE 
+#VSLIDE
 ### factory + jsx
  code createComponent
- 
- 
+
+
 #VSLIDE
 ### css-modules
         class composition
@@ -73,49 +98,49 @@
         ajout de classe sur un enfant
         media queries
 
-#HSLIDE 
+#HSLIDE
 ## branchement sur les apps
 
 #VSLIDE
 build
    - babel --> /lib /es
    - webpack ---> dist css/js
-   - bundler --> webpack 
+   - bundler --> webpack
 
 #VSLIDE
 - adapters --> mooc/www
 
-#VSLIDE  
+#VSLIDE
 - mooc
    code directive
-   
-#VSLIDE  
+
+#VSLIDE
 - www
    code helper
-   
-#VSLIDE  
+
+#VSLIDE
 - webpack pour les apps
   code jsx
 
-#VSLIDE  
+#VSLIDE
 - le branchement
   - npm link
   - publish npm + bump sur le projet
 
-#HSLIDE 
+#HSLIDE
 ##comment ca marche
 
-#VSLIDE  
+#VSLIDE
     lerna
         npm test, npm run build, npm start
         publish
- 
-#VSLIDE   
+
+#VSLIDE
     treantjs
         h -> generic vdom -> engine -> render
-        
-#VSLIDE   
-### tools        
+
+#VSLIDE
+### tools
  es6
  babel
  webpack

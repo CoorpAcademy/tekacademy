@@ -173,8 +173,7 @@ build
 - Sandbox upgrade
  - Edit your props
  - Tags and components lookup
- - Pattern lab (see [Lonely Planet's](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours))
-- 
+- Pattern lab (see [Lonely Planet's](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours))
 - Everything is a component
 
 

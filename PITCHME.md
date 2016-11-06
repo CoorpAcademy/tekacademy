@@ -2,77 +2,44 @@
 https://gitpitch.com/coorpacademy/tekacademy/components
 
 #HSLIDE
-## qu'est ce que cest
-chris
+## What is it ?
 
 #VSLIDE
- - vue uniquement
- - bibliotheque de vdom
+ - View
 
 #VSLIDE
- - vdom + jsx
+ - View
+ - Library
 
-```js
- export default (treant, options) => {
-  const {h} = treant;
+#VSLIDE
+ - How it is designed
 
-  return (props, children) => {
-    const state = props.popular ? style.popular : style.default;
+#VSLIDE
+ - How it is designed
+ - How it is developed
 
-    return (
-      <span className={state}>★</span>
-    );
-  };
-};
+#VSLIDE
+ - How it is designed
+ - How it is developed
+ - How it is used
+
+#VSLIDE
+ - How it is designed
+ - How it is developed
+ - How it is used
+ - How it works
+
+#VSLIDE
+Let's get started
 ```
-
-#VSLIDE
- + cssmodules
-
-```css
-.default {
-  color: #B0BEC5;
-  margin-right: 2px;
-}
-
-.popular {
-  color: #FFB90D;
-  margin-right: 2px;
-}
+npm i
+npm start
+---> sandbox on http://localhost:3004
 ```
-
-#VSLIDE
- `treant -> h`
-
-#VSLIDE
- `treant -> h -> generic vdom`
-
-#VSLIDE
- `treant -> h -> generic vdom -> engine`
-
-#VSLIDE
- `treant -> h -> generic vdom -> engine -> render`
-
-#VSLIDE
-  lerna --> packages
-    - components
-    - bundler
-    - treant-core
-    - treant-engines
-    - treant-adapter
-
-#VSLIDE
-    treantjs
-        h -> generic vdom -> engine -> render
-
-#HSLIDE
-## installation
-  - slide: clone  npm i  npm start
-  --> sandbox
-  --> demo
 
 #HSLIDE
 ## THE LIBRARY
+#### How it is designed
 
 #VSLIDE
 ![Logo](http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
@@ -147,17 +114,50 @@ const GridList = (props, children) => {
     - branchement des parents/enfants jusqu'au template
 
 #HSLIDE
-## creer un template : outils
-chris
+### How it is developed
+
+#VSLIDE
+## Tools
 
 #VSLIDE
 ### validation -> api-check
- code conditions
+```
+const conditions = checker.shape({
+  props: checker.shape({
+    popular: checker.bool
+  }).strict,
+  children: checker.none
+});
+```
 
 #VSLIDE
 ### factory + jsx
- code createComponent
+```js
+ export default (treant, options) => {
+  const {h} = treant;
 
+  return (props, children) => {
+    const state = props.popular ? style.popular : style.default;
+
+    return (
+      <span className={state}>★</span>
+    );
+  };
+};
+```
+
+#VSLIDE
+```css
+.default {
+  color: #B0BEC5;
+  margin-right: 2px;
+}
+
+.popular {
+  color: #FFB90D;
+  margin-right: 2px;
+}
+```
 
 #VSLIDE
 ### CSS-MODULES
@@ -169,21 +169,53 @@ chris
 - No global scope, no conflicts
 
 #HSLIDE
-## branchement sur les apps
-chris
+### How it is used
 
 #VSLIDE
-build
-   - babel --> /lib /es
-   - webpack ---> dist css/js
-   - bundler --> webpack
+### build
+- babel
+  -> /lib es5
+  -> /es  es6
 
 #VSLIDE
-- adapters --> mooc/www
+### build
+- babel
+  -> /lib es5
+  -> /es  es6
+- webpack ---> dist css/js
 
 #VSLIDE
-- mooc
-   code directive
+### build
+- babel
+  -> /lib es5
+  -> /es  es6
+- webpack ---> dist css/js
+- bundler --> webpack (mooc/www-static)
+
+#VSLIDE
+### mooc
+- bundler
+- adapter angular --> directives
+- https://github.com/CoorpAcademy/coorpacademy/blob/master/app/server/lib/components.js
+
+#VSLIDE
+### mooc
+```html
+<discipline-cards props="props"/>
+```
+```js
+$scope.props = {
+    image: 'tree',
+    theme: $state.params.theme,
+    disciplines: [],
+    onDisciplineClick: function(discipline) {
+        $rootScope.openDiscipline(discipline);
+    },
+    onModuleClick: function(module) {
+        $rootScope.openModule(module);
+    }
+};
+```
 
 #VSLIDE
 - www
@@ -197,6 +229,17 @@ build
 - le branchement
   - npm link
   - publish npm + bump sur le projet
+
+#HSLIDE
+## How it is done
+
+#VSLIDE
+### lerna --> packages
+![packages](assets/packages.png)
+
+#VSLIDE
+### factories --> DOM
+![rendering](assets/rendering.png)
 
 #HSLIDE
 ## Next

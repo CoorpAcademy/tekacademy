@@ -120,7 +120,7 @@ Do what you're supposed to do.
 
 #VSLIDE
 
-```
+```JavaScript
 const GridList = (props, children) => {
     return (
       <div className={style.wrapper}>

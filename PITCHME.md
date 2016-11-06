@@ -120,7 +120,7 @@ Do what you're supposed to do.
 
 #VSLIDE
 
-```JavaScript
+```jsx
 const GridList = (props, children) => {
   return (
     <div className={style.wrapper}>
@@ -129,7 +129,7 @@ const GridList = (props, children) => {
   );
 };
 ```
-```JavaScript
+```jsx
 <GridList>
   {brandCards}
 </GridList>

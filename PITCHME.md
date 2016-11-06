@@ -120,7 +120,7 @@ Do what you're supposed to do.
 
 #VSLIDE
 
-Responsibility.
+A matter of responsibility.
 ```JavaScript
 const GridList = (props, children) => {
   return (
@@ -140,9 +140,6 @@ const GridList = (props, children) => {
   <BrandCard {...brand}/>
 </div>
 ```
-
-#VSLIDE
-- decoupe de api/fixtures par composants
 
 #VSLIDE
 ### Implementation

@@ -74,7 +74,8 @@ chris
 #HSLIDE
 ## THE LIBRARY
 
-#VSLIDE?image=http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png
+#VSLIDE
+![Logo](http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
 
 #VSLIDE
 
@@ -110,7 +111,24 @@ export default {
 ### Analysis
 
 #VSLIDE
+
 ![Logo](http://atomicdesign.bradfrost.com/images/content/instagram-atomic.png)
+
+#VSLIDE
+
+Do what you're supposed to do.
+
+#VSLIDE
+
+```
+const GridList = (props, children) => {
+    return (
+      <div className={style.wrapper}>
+        {children}
+      </div>
+    );
+  };
+```
 
 #VSLIDE
 - decoupe de api/fixtures par composants

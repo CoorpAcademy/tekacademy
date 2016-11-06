@@ -78,13 +78,26 @@ chris
 
 #VSLIDE
 
-First things first: define your templates.
+First things first: define your *templates*.
 
 #VSLIDE
-- discussion vue/metier définition des templates
+
+Step 2: hope your UI / UX friends make *consistent* work.
 
 #VSLIDE
-- definir les etats des templates --> les fixtures
+
+Step3: define the interface for every template.
+```
+export default {
+  props: {
+    type: 'text',
+    title: 'Name',
+    placeholder: 'Your name',
+    value: 'Foo',
+    onChange: value => console.log(value) // eslint-disable-line no-console
+  }
+};
+```
 
 #VSLIDE
 - decoupe en components mutualisés entre les templates

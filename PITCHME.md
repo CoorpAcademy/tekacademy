@@ -107,12 +107,16 @@ export default {
 ## A TEMPLATE'S GENESIS
 
 #VSLIDE
-### analyse macro
-    - choix de la responsabilite parent/enfant  [grid VS card]
-    - decoupe de api/fixtures par composants
+### Analysis
 
 #VSLIDE
-### realisation macro
+![Logo](http://atomicdesign.bradfrost.com/images/content/instagram-atomic.png)
+
+#VSLIDE
+- decoupe de api/fixtures par composants
+
+#VSLIDE
+### Implementation
     - creation des dom + css
     - branchement des parents/enfants jusqu'au template
 

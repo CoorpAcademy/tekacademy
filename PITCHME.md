@@ -72,13 +72,13 @@ chris
   --> demo
 
 #HSLIDE
-## La bibliotheque
-julien
+## THE LIBRARY
+
 
 #VSLIDE
 ### structure
-    - atomic design: `atom -> molecule -> organism -> template`
-    - behaviour
+
+    ![Logo](http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
 
 #HSLIDE
 ## creer un template : analyse

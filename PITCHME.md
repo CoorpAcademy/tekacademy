@@ -132,10 +132,11 @@ chris
 #VSLIDE
 ### CSS-MODULES
 
-- Class composition
+- Class composition / dependencies
 - Inline style
 - Class forwarding to a child via its props
 - Media queries
+- No global scope, no conflicts :v:
 
 #HSLIDE
 ## branchement sur les apps

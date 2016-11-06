@@ -75,9 +75,7 @@ chris
 ## THE LIBRARY
 
 
-#VSLIDE
-### Structure
-![Logo](http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
+#VSLIDE?image=http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png
 
 #HSLIDE
 ## First things first: define your templates.

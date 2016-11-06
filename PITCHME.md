@@ -117,20 +117,6 @@ const GridList = (props, children) => {
 ### How it is developed
 
 #VSLIDE
-## Tools
-
-#VSLIDE
-### validation -> api-check
-```
-const conditions = checker.shape({
-  props: checker.shape({
-    popular: checker.bool
-  }).strict,
-  children: checker.none
-});
-```
-
-#VSLIDE
 ### factory + jsx
 ```js
  export default (treant, options) => {
@@ -160,6 +146,14 @@ const conditions = checker.shape({
 ```
 
 #VSLIDE
+## Composing
+- https://github.com/CoorpAcademy/components/blob/master/packages/%40coorpacademy-components/src/molecule/star-rating/index.js
+
+#VSLIDE
+### validation -> api-check
+- https://github.com/CoorpAcademy/components/blob/master/packages/%40coorpacademy-components/src/molecule/star-rating/index.js
+
+#VSLIDE
 ### CSS-MODULES
 
 - Class composition / dependencies
@@ -174,22 +168,22 @@ const conditions = checker.shape({
 #VSLIDE
 ### build
 - babel
-  -> /lib es5
-  -> /es  es6
+    - /lib es5
+    - /es  es6
 
 #VSLIDE
 ### build
 - babel
-  -> /lib es5
-  -> /es  es6
-- webpack ---> dist css/js
+    - /lib es5
+    - /es  es6
+- `webpack` ---> `/dist` (css/js)
 
 #VSLIDE
 ### build
 - babel
-  -> /lib es5
-  -> /es  es6
-- webpack ---> dist css/js
+    - /lib es5
+    - /es  es6
+- `webpack` ---> `/dist` (css/js)
 - bundler --> webpack (mooc/www-static)
 
 #VSLIDE
@@ -218,27 +212,52 @@ $scope.props = {
 ```
 
 #VSLIDE
-- www
-   code helper
+### www-static
+- bundler
+- adapter dust --> helpers
+- https://github.com/CoorpAcademy/coorpacademy-www-static/blob/intregating-components/app/components-helpers.js
 
 #VSLIDE
-- webpack pour les apps
-  code jsx
+### www-static
+```dust
+{@coorp-header
+    rootUrl="/"
+    connexionLink=url.upNotAnonymous
+    inscriptionLink=url.upNotAnonymous
+/}
+```
 
 #VSLIDE
-- le branchement
-  - npm link
-  - publish npm + bump sur le projet
+### redux apps
+```
+import * as treant from '@coorpacademy/treantjs-core';
+import {createBrandUpdate} from '@coorpacademy/components';
+
+export default options => {
+  const mapStateToProps = createMapStateToProps(CONFIG, options);
+  const UpdateBrand = createBrandUpdate(treant, options);
+
+  return pipe(
+    mapStateToProps,
+    UpdateBrand
+  );
+};
+```
+App's renderer picks the engine to render as DOM.
+
+#VSLIDE
+### plug
+- dev: `npm link`
+- dev|test: `npm publish:canary`
+- prod: `npm publish:latest`
 
 #HSLIDE
 ## How it is done
 
 #VSLIDE
-### lerna --> packages
 ![packages](assets/packages.png)
 
 #VSLIDE
-### factories --> DOM
 ![rendering](assets/rendering.png)
 
 #HSLIDE

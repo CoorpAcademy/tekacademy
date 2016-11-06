@@ -74,12 +74,11 @@ chris
 #HSLIDE
 ## THE LIBRARY
 
-
 #VSLIDE?image=http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png
 
-#HSLIDE
-## First things first: define your templates.
+#VSLIDE
 
+First things first: define your templates.
 
 #VSLIDE
 - discussion vue/metier définition des templates

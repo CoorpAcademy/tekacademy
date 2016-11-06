@@ -122,12 +122,17 @@ Do what you're supposed to do.
 
 ```JavaScript
 const GridList = (props, children) => {
-    return (
-      <div className={style.wrapper}>
-        {children}
-      </div>
-    );
-  };
+  return (
+    <div className={style.wrapper}>
+      {children}
+    </div>
+  );
+};
+```
+```JavaScript
+<GridList>
+  {brandCards}
+</GridList>
 ```
 
 #VSLIDE

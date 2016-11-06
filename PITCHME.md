@@ -78,7 +78,7 @@ chris
 #VSLIDE
 ### structure
 
-    ![Logo](http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
+![Logo](http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
 
 #HSLIDE
 ## creer un template : analyse

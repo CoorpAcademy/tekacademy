@@ -78,15 +78,15 @@ chris
 
 #VSLIDE
 
-First things first: define your *templates*.
+**First things first:** define your *templates*.
 
 #VSLIDE
 
-Step 2: hope your UI / UX friends make *consistent* work.
+**Step 2:** hope your UI / UX friends make *consistent* work.
 
 #VSLIDE
 
-Step 3: define the interface / fixtures for every template.
+**Step 3:** define the interface / fixtures for every template.
 ```
 export default {
   props: {
@@ -101,7 +101,7 @@ export default {
 
 #VSLIDE
 
-Step 4: split *everything* into atoms, molecules and organisms. Consistency is key.
+**Step 4:** split *everything* into atoms, molecules and organisms. Consistency is key.
 
 #HSLIDE
 ## A TEMPLATE'S GENESIS
@@ -130,13 +130,12 @@ chris
 
 
 #VSLIDE
-julien
+### CSS-MODULES
 
-### css-modules
-        class composition
-        inline
-        ajout de classe sur un enfant
-        media queries
+- Class composition
+- Inline style
+- Class forwarding to a child via its props
+- Media queries
 
 #HSLIDE
 ## branchement sur les apps

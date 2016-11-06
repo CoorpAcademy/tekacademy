@@ -86,7 +86,7 @@ Step 2: hope your UI / UX friends make *consistent* work.
 
 #VSLIDE
 
-Step3: define the interface for every template.
+Step 3: define the interface / fixtures for every template.
 ```
 export default {
   props: {
@@ -94,17 +94,17 @@ export default {
     title: 'Name',
     placeholder: 'Your name',
     value: 'Foo',
-    onChange: value => console.log(value) // eslint-disable-line no-console
+    onChange: value => console.log(value)
   }
 };
 ```
 
 #VSLIDE
-- decoupe en components mutualisés entre les templates
+
+Step 4: split *everything* into atoms, molecules and organisms. Consistency is key.
 
 #HSLIDE
-## creer un template : implementation
-julien
+## A TEMPLATE'S GENESIS
 
 #VSLIDE
 ### analyse macro

@@ -136,7 +136,7 @@ chris
 - Inline style
 - Class forwarding to a child via its props
 - Media queries
-- No global scope, no conflicts :v:
+- No global scope, no conflicts
 
 #HSLIDE
 ## branchement sur les apps
@@ -169,11 +169,13 @@ build
   - publish npm + bump sur le projet
 
 #HSLIDE
-julien
 ## Next
-- ameliorer la sandbox -> pick props, tags + recherche de composants
-- migrer les trucs existants
-- tout ce qui est nouveau en UI doit etre dans components
+- Sandbox upgrade
+ - Edit your props
+ - Tags and components lookup
+ - Pattern lab (see [Lonely Planet's](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours))
+- 
+- Everything is a component
 
 
 

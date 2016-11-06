@@ -76,13 +76,12 @@ chris
 
 
 #VSLIDE
-### structure
-
+### Structure
 ![Logo](http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
 
 #HSLIDE
-## creer un template : analyse
-julien
+## First things first: define your templates.
+
 
 #VSLIDE
 - discussion vue/metier définition des templates

@@ -10,9 +10,9 @@
 
 #VSLIDE
  - How it is designed
- - How it is developed
- - How it is used
- - How it works
+ - <span class="fragment" data-fragment-index="1" data-autoslide="2000">How it is developed</span>
+ - <span class="fragment" data-fragment-index="1" data-autoslide="2000">How it is used</span>
+ - <span class="fragment" data-fragment-index="1" data-autoslide="2000">How it works</span>
 
 #VSLIDE
 Let's get started

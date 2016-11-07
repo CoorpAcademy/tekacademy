@@ -114,7 +114,7 @@ const GridList = (props, children) => {
 
 #VSLIDE
 ## Composition and validation
-- https://github.com/CoorpAcademy/components/blob/master/packages/%40coorpacademy-components/src/molecule/star-rating/index.js
+https://github.com/CoorpAcademy/components/blob/master/packages/%40coorpacademy-components/src/molecule/star-rating/index.js
 
 #VSLIDE
 ### CSS-modules

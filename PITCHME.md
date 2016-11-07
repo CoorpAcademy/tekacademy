@@ -61,27 +61,28 @@ props: {
 #VSLIDE
 ### How it is developed
 ```js
- export default (treant, options) => {
-  const {h} = treant;
+const Star = (props, children) => {
+  const {
+    popular = false
+  } = props;
+  
+  const state = popular ? style.popular : style.default;
 
-  return (props, children) => {
-    const state = props.popular ? style.popular : style.default;
-
-    return (
-      <span className={state}>★</span>
-    );
-  };
+  return (
+    <span className={state}>★</span>
+  );
 };
 ```
 ```css
 .default {
   color: #B0BEC5;
-  margin-right: 2px;
+  font-family: 'Open Sans';
+  font-weight: 700;
 }
 
 .popular {
+  composes: default;
   color: #FFB90D;
-  margin-right: 2px;
 }
 ```
 

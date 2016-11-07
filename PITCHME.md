@@ -124,6 +124,7 @@ const GridList = (props, children) => {
 - No global scope, no conflicts
 
 #HSLIDE
+# USERS' GUIDE
 ### How it is used
 
 #VSLIDE
@@ -213,6 +214,7 @@ App's renderer picks the engine to render as DOM.
 - prod: `npm publish:latest`
 
 #HSLIDE
+# THE ENGINE
 ## How it is done
 
 #VSLIDE
@@ -222,12 +224,13 @@ App's renderer picks the engine to render as DOM.
 ![rendering](assets/rendering.png)
 
 #HSLIDE
-## Next
+# NEXT
 - Sandbox upgrade
  - Edit your props
  - Tags and components lookup
 - Pattern lab (see [Lonely Planet's](http://rizzo.lonelyplanet.com/styleguide/design-elements/colours))
 - Everything is a component
+- **Atomic Design** should be a part of every step
 
 
 

@@ -1,5 +1,5 @@
 # Components
-https://gitpitch.com/coorpacademy/tekacademy/components
+![Logo](http://www.coderholic.com/files/tree4.png)
 
 #HSLIDE
 ## So, what's all the fuss about?

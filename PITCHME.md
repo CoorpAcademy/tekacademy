@@ -9,10 +9,10 @@
  - Library
 
 #VSLIDE
-How it is designed
-<span class="fragment" data-fragment-index="1" data-autoslide="2000">How it is developed</span>
-<span class="fragment" data-fragment-index="2" data-autoslide="2000">How it is used</span>
-<span class="fragment" data-fragment-index="3" data-autoslide="2000">How it works</span>
+### How it is designed
+### <span class="fragment" data-fragment-index="1" data-autoslide="2000">How it is developed</span>
+### <span class="fragment" data-fragment-index="2" data-autoslide="2000">How it is used</span>
+### <span class="fragment" data-fragment-index="3" data-autoslide="2000">How it works</span>
 
 #VSLIDE
 Let's get started

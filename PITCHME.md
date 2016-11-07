@@ -2,26 +2,11 @@
 https://gitpitch.com/coorpacademy/tekacademy/components
 
 #HSLIDE
-## What is it ?
-
-#VSLIDE
- - View
+## So, what's all the fuss about?
 
 #VSLIDE
  - View
  - Library
-
-#VSLIDE
- - How it is designed
-
-#VSLIDE
- - How it is designed
- - How it is developed
-
-#VSLIDE
- - How it is designed
- - How it is developed
- - How it is used
 
 #VSLIDE
  - How it is designed
@@ -42,82 +27,39 @@ npm start
 #### How it is designed
 
 #VSLIDE
+### Atomic Design
 ![Logo](http://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png)
 
 #VSLIDE
-
 **First things first:** define your *templates*.
 
 #VSLIDE
-
 **Step 2:** hope your UI / UX friends make *consistent* work.
 
 #VSLIDE
-
-**Step 3:** define the interface / fixtures for every template.
-```
-export default {
-  props: {
-    type: 'text',
-    title: 'Name',
-    placeholder: 'Your name',
-    value: 'Foo',
-    onChange: value => console.log(value)
-  }
-};
+**Step 3:** define the interface for every template.
+```js
+props: {
+  type: 'text',
+  title: 'Name',
+  placeholder: 'Your name',
+  value: 'Foo',
+  onChange: value => console.log(value)
+}
 ```
 
 #VSLIDE
-
 **Step 4:** split *everything* into atoms, molecules and organisms. Consistency is key.
 
 #HSLIDE
 ## A TEMPLATE'S GENESIS
+#### Analysis
 
 #VSLIDE
-### Analysis
-
-#VSLIDE
-
 ![Logo](http://atomicdesign.bradfrost.com/images/content/instagram-atomic.png)
 
 #VSLIDE
-
-Do what you're supposed to do.
-
-#VSLIDE
-
-A matter of responsibility.
-```JavaScript
-const GridList = (props, children) => {
-  return (
-    <div className={style.wrapper}>
-      {children}
-    </div>
-  );
-};
-```
-```JavaScript
-<GridList>
-  {brandCards}
-</GridList>
-```
-```JavaScript
-<div className={style.brand}>
-  <BrandCard {...brand}/>
-</div>
-```
-
-#VSLIDE
 ### Implementation
-    - creation des dom + css
-    - branchement des parents/enfants jusqu'au template
-
-#HSLIDE
-### How it is developed
-
-#VSLIDE
-### factory + jsx
 ```js
  export default (treant, options) => {
   const {h} = treant;
@@ -131,8 +73,6 @@ const GridList = (props, children) => {
   };
 };
 ```
-
-#VSLIDE
 ```css
 .default {
   color: #B0BEC5;
@@ -144,6 +84,41 @@ const GridList = (props, children) => {
   margin-right: 2px;
 }
 ```
+
+#VSLIDE
+Do what you're supposed to do.
+
+#VSLIDE
+A matter of responsibility.
+```js
+const GridList = (props, children) => {
+  return (
+    <div className={style.wrapper}>
+      {children}
+    </div>
+  );
+};
+```
+```js
+<GridList>
+  {brandCards}
+</GridList>
+```
+```js
+<div className={style.brand}>
+  <BrandCard {...brand}/>
+</div>
+```
+
+#HSLIDE
+### How it is developed
+
+#VSLIDE
+### factory + jsx
+
+
+#VSLIDE
+
 
 #VSLIDE
 ## Composing

@@ -59,7 +59,7 @@ props: {
 ![Logo](http://atomicdesign.bradfrost.com/images/content/instagram-atomic.png)
 
 #VSLIDE
-### Implementation
+### How it is developed
 ```js
  export default (treant, options) => {
   const {h} = treant;
@@ -89,7 +89,7 @@ props: {
 Do what you're supposed to do.
 
 #VSLIDE
-A matter of responsibility.
+A matter of responsibility and composition.
 ```js
 const GridList = (props, children) => {
   return (
@@ -99,6 +99,7 @@ const GridList = (props, children) => {
   );
 };
 ```
+Template:
 ```js
 <GridList>
   {brandCards}
@@ -110,18 +111,8 @@ const GridList = (props, children) => {
 </div>
 ```
 
-#HSLIDE
-### How it is developed
-
 #VSLIDE
-### factory + jsx
-
-
-#VSLIDE
-
-
-#VSLIDE
-## Composing
+## Composition
 - https://github.com/CoorpAcademy/components/blob/master/packages/%40coorpacademy-components/src/molecule/star-rating/index.js
 
 #VSLIDE

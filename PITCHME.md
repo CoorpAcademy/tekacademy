@@ -123,6 +123,7 @@ https://github.com/CoorpAcademy/components/blob/master/packages/%40coorpacademy-
 - Class forwarding to a child via its props
 - Media queries
 - No global scope, no conflicts
+`<div class="brand-card__wrapper___4kKXy">`
 
 #HSLIDE
 # USERS' GUIDE

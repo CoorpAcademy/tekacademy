@@ -89,7 +89,7 @@ props: {
 Do what you're supposed to do.
 
 #VSLIDE
-A matter of responsibility and composition.
+A matter of responsibility…
 ```js
 const GridList = (props, children) => {
   return (
@@ -99,7 +99,7 @@ const GridList = (props, children) => {
   );
 };
 ```
-Template:
+…and composition
 ```js
 <GridList>
   {brandCards}
@@ -112,16 +112,11 @@ Template:
 ```
 
 #VSLIDE
-## Composition
+## Composition and validation
 - https://github.com/CoorpAcademy/components/blob/master/packages/%40coorpacademy-components/src/molecule/star-rating/index.js
 
 #VSLIDE
-### validation -> api-check
-- https://github.com/CoorpAcademy/components/blob/master/packages/%40coorpacademy-components/src/molecule/star-rating/index.js
-
-#VSLIDE
-### CSS-MODULES
-
+### CSS-modules
 - Class composition / dependencies
 - Inline style
 - Class forwarding to a child via its props

@@ -133,24 +133,32 @@ https://github.com/CoorpAcademy/components/blob/master/packages/%40coorpacademy-
 ### How it is used
 
 #VSLIDE
-### build
-- babel
-    - /lib es5
-    - /es  es6
-
-#VSLIDE
-### build
+### Build
 - babel
     - /lib es5
     - /es  es6
 - `webpack` ---> `/dist` (css/js)
 
 #VSLIDE
-### build
-- babel
-    - /lib es5
-    - /es  es6
-- `webpack` ---> `/dist` (css/js)
+### redux apps
+```
+import * as treant from '@coorpacademy/treantjs-core';
+import {createBrandUpdate} from '@coorpacademy/components';
+
+export default options => {
+  const mapStateToProps = createMapStateToProps(CONFIG, options);
+  const UpdateBrand = createBrandUpdate(treant, options);
+
+  return pipe(
+    mapStateToProps,
+    UpdateBrand
+  );
+};
+```
+App's renderer picks the engine to render as DOM.
+
+#VSLIDE
+### Build
 - bundler --> webpack (mooc/www-static)
 
 #VSLIDE
@@ -195,25 +203,7 @@ $scope.props = {
 ```
 
 #VSLIDE
-### redux apps
-```
-import * as treant from '@coorpacademy/treantjs-core';
-import {createBrandUpdate} from '@coorpacademy/components';
-
-export default options => {
-  const mapStateToProps = createMapStateToProps(CONFIG, options);
-  const UpdateBrand = createBrandUpdate(treant, options);
-
-  return pipe(
-    mapStateToProps,
-    UpdateBrand
-  );
-};
-```
-App's renderer picks the engine to render as DOM.
-
-#VSLIDE
-### plug
+### Test and publish
 - dev: `npm link`
 - dev|test: `npm publish:canary`
 - prod: `npm publish:latest`

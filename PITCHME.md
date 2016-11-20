@@ -1,172 +1,238 @@
-#HTTP Cache
+#HTTP Yarn
 
-![keep cool](assets/img/comics-geek-joyoftech-551835.gif)
+*Fast*: Yarn caches every package it downloads so it never needs to download the same package again. It also parallelizes operations to maximize resource utilization so install times are faster than ever.
 
-#VSLIDE
+*Reliable*: Using a detailed, concise lockfile format and a deterministic algorithm for installs, Yarn is able to guarantee that an install that worked on one system will work exactly the same way on any other system.
 
-Since June 1999
-
-[RFC 2616](https://tools.ietf.org/html/rfc2616)
+*Secure*: Yarn uses checksums to verify the integrity of every installed package before its code is executed.
 
 #VSLIDE
 
-50 percent http hits could be cached
+Installation:
 
-![Image of Alexa](assets/img/cacheable-resources.png)
-300 000 first sites(Alexa ranking)
+C'est un binaire autonome
+
+MacOsX
+
+```
+brew update
+brew install yarn
+```
+
+Linux
+
+* Debian/Ubuntu Linux
+* CentOS / Fedora / RHEL
+* Arch Linux
+* Solus
+
 
 #HSLIDE
 
-### HEADERS
+First try
 
-#### HTTP Document
-![Header Struct](assets/img/http_header_struct.jpg)
+```
+/usr/local/Cellar/yarn/0.17.3/libexec/lib/node_modules/yarn/bin/yarn.js:47
+      throw err;
+      ^
 
-#VSLIDE
-
-### HTTP Header
-![Header](assets/img/http_headers.jpg)
-
-#VSLIDE
-
-#### REQUEST
-```HTTP
-GET http://www.tiggerwigger.com/ HTTP/1.0
-Proxy-Connection: Keep-Alive
-User-Agent: Mozilla/5.0 [en] (X11; I; Linux 2.2.3 i686)
-Host: www.tiggerwigger.com
-Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
-
-Accept-Encoding: gzip
-Accept-Language: en
-Accept-Charset: iso-8859-1, *, utf-8
+Error: ENOENT: no such file or directory, open '/Users/calvy/Library/Caches/Yarn/.roadrunner.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:640:18)
+    at Object.fs.writeFileSync (fs.js:1333:33)
+    at /usr/local/Cellar/yarn/0.17.3/libexec/lib/node_modules/yarn/node_modules/roadrunner/index.js:25:6
+    at /usr/local/Cellar/yarn/0.17.3/libexec/lib/node_modules/yarn/node_modules/roadrunner/index.js:12:12
+    at emitOne (events.js:101:20)
+    at process.emit (events.js:188:7)
+    at processEmit [as emit] (/usr/local/Cellar/yarn/0.17.3/libexec/lib/node_modules/yarn/node_modules/signal-exit/index.js:140:35)
+    at process.exit (internal/process.js:146:15)
+    at Command.<anonymous> (/usr/local/Cellar/yarn/0.17.3/libexec/lib/node_modules/yarn/node_modules/commander/index.js:825:13)
 ```
 
 #VSLIDE
 
-#### RESPONSE
-```HTTP
-HTTP/1.0 200 OK
-Date: Fri, 13 Nov 2009 06:57:43 GMT
-Content-Location: http://locutus.tiggerwigger.com/index.html
-Etag: "07db14afa76be1:1074"
-Last-Modified: Thu, 05 Nov 2009 20:01:38 GMT
-Content-Length: 7931
-Content-Type: text/html
-Server: Microsoft-IIS/4.0
-Age: 922
-Proxy-Connection: close
+https://github.com/yarnpkg/yarn/issues/1724
+
+```
+mkdir -p ~/Library/Caches/Yarn
+```
+
+=====>
+
+```
+yarn --version
+0.17.3
 ```
 
 #HSLIDE
 
-#### Good news?
+Side effect of brew instal yarn
 
-Every browser ships with an implementation of an HTTP cache
+* not os consistent
+* must change the path 
+`export PATH="$PATH:$HOME/.yarn/bin"`
+* brew install node and break nvm
 
-![Simple cache](assets/img/http-request.png)
+wait really instal like that?
+
+consider using npm
+
+```
+npm i -g yarn 
+```
+
+```
+yarn --version
+0.17.4
+```
+
+![](./assets/img/yarn.0.16.1.png)
 
 #VSLIDE
 
-#### 304 Etag
+Ok let's go
 
-Validating cached responses with ETags
+```
+info No lockfile found.
+error npm-shrinkwrap.json found. This will not be updated or respected. See https://yarnpkg.com/en/docs/migrating-from-npm for more information.
+warning @coorpacademy/coorpacademy@4.60.1: No license field
+[1/4] 🔍  Resolving packages...
+error An unexpected error occurred: "https://registry.yarnpkg.com/@coorpacademy%2fcoorpacademy-core: User not found".
+info If you think this is a bug, please open a bug report with the information provided in "/Users/calvy/Documents/Boulot/Sources/coorpacademy/yarn-error.log".
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+```
 
-![Simple Etag](assets/img/http-cache-control.png)
+WHAT?
+
+```
+_auth="xxxxxx="
+email=lc@coorpacademy.com
+//registry.npmjs.org/:_authToken=xxxxxxxxxx
+@coorpacademy:registry=http://registry.npmjs.org/
+```
+
+#HSLIDE
+```
+info No lockfile found.
+error npm-shrinkwrap.json found. This will not be updated or respected. See https://yarnpkg.com/en/docs/migrating-from-npm for more information.
+warning @coorpacademy/coorpacademy@4.60.1: No license field
+[1/4] 🔍  Resolving packages...
+warning minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+warning grunt > minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+warning cli > glob > minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+warning grunt > glob > minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+warning kraken-devtools > minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+warning bower > glob > minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+warning grunt > glob > graceful-fs@1.2.3: graceful-fs v3.0.0 and before will fail on node releases >= v7.0. Please update to graceful-fs@^4.0.0 as soon as possible. Use 'npm ls graceful-fs' to find it in the tree.
+warning grunt-html2js > jade@1.11.0: Jade has been renamed to pug, please install the latest version of pug instead of jade
+warning request > node-uuid@1.4.7: use uuid module instead
+warning bower > request > node-uuid@1.4.7: use uuid module instead
+warning bower > bower-json > graceful-fs@2.0.3: graceful-fs v3.0.0 and before will fail on node releases >= v7.0. Please update to graceful-fs@^4.0.0 as soon as possible. Use 'npm ls graceful-fs' to find it in the tree.
+warning bower > insight > tough-cookie@0.12.1: ReDoS vulnerability parsing Set-Cookie https://nodesecurity.io/advisories/130
+warning grunt-html2js > jade > transformers@2.1.0: Deprecated, use jstransformer
+warning grunt-favicons > cheerio > cheerio-select > CSSselect@0.7.0: the module is now available as 'css-select'
+warning grunt-favicons > cheerio > cheerio-select > CSSselect > CSSwhat@0.4.7: the module is now available as 'css-what'
+[2/4] 🚚  Fetching packages...
+error An unexpected error occurred: "https://registry.yarnpkg.com/@coorpacademy/squirrel/-/squirrel-2.3.0.tgz: invalid tar file".
+```
+
+`yarn config set registry https://registry.npmjs.org/`
+
+```
+# THIS IS AN AUTOGENERATED FILE. DO NOT EDIT THIS FILE DIRECTLY.
+# yarn lockfile v1
+
+
+registry "https://registry.npmjs.org/"
+email system@coorpacademy.com
+username coorpadmin
+```
 
 #VSLIDE
 
-#### How to?
+run
 
-The only thing left to do is to ensure that the server is providing the necessary ETag tokens.
+```
+  battleMapper function
+    1) "before all" hook
+Bugsnag:  Bugsnag: error notifying bugsnag.com - Error: Current release stage not permitted to send events to Bugsnag.
+Bugsnag:  Error: Could not locate the bindings file. Tried:
+ → /Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/bcrypt/build/bcrypt_lib.node
+ → /Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/bcrypt/build/Debug/bcrypt_lib.node
+ → /Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/bcrypt/build/Release/bcrypt_lib.node
+ → /Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/bcrypt/out/Debug/bcrypt_lib.node
+ → /Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/bcrypt/Debug/bcrypt_lib.node
+ → /Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/bcrypt/out/Release/bcrypt_lib.node
+ → /Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/bcrypt/Release/bcrypt_lib.node
+ → /Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/bcrypt/build/default/bcrypt_lib.node
+ → /Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/bcrypt/compiled/6.5.0/darwin/x64/bcrypt_lib.node
+    at bindings (node_modules/bindings/bindings.js:88:9)
+    at Object.<anonymous> (node_modules/bcrypt/bcrypt.js:3:35)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (core/models/user.js:8:16)
+    at require (internal/module.js:20:19)
+    at loadSchema (core/models/index.js:42:24)
+    at apply (node_modules/lodash/lodash.js:499:17)
+    at wrapper (node_modules/lodash/lodash.js:5383:16)
+    at Array.reduce (native)
+    at createConnection (core/models/index.js:38:17)
+    at db (test/server/context.js:28:26)
+    at apply (node_modules/lodash/lodash.js:497:27)
+    at wrapper (node_modules/lodash/lodash.js:5383:16)
+    at node_modules/async/lib/async.js:718:13
+    at Immediate.iterate (node_modules/async/lib/async.js:262:13)
 
-ExpressJs & express.static enable Etag by default
 
-[https://up.coorpacademy.com/config](https://up.coorpacademy.com/config)
+```
+
+????
+
+`npm rebuild`
+
 
 #HSLIDE
 
-#### Cache-Control
+##Advices
 
-Each resource can define its caching policy via the Cache-Control HTTP header.
+To make sure your app works consistently, you should always save the yarn.lock file in your code repository.
 
-![Simple Cache-Control](assets/img/http-cache-control-highlight.png)
+## Caveats
 
-#VSLIDE
+Don't use npm-shrinkwrap.json on first yarn.lock
+Missing assets in --production
 
-#### no-cache" and "no-store"
+```
+Error: Cannot find module 'semver'
+    at Function.Module._resolveFilename (module.js:455:15)
+    at Function.Module._load (module.js:403:25)
+    at Function._load (/Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/pmx/lib/transaction.js:62:21)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/baucis/Api/index.js:3:14)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Function._load (/Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/pmx/lib/transaction.js:62:21)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/calvy/Documents/Boulot/Sources/coorpacademy/node_modules/baucis/index.js:
+```
 
-no-cache: need revalidation
-
-no-store: disallow storage
-
-#VSLIDE
-
-#### "public" vs. "private"
-
-public: cache everywhere
-
-private: cache on browser
-![Cdn cache](assets/img/cdn-network.png)
-
-#VSLIDE 
-
-#### "max-age"
-This directive specifies the maximum time in seconds that the fetched response is allowed to be reused from the time of the request.
-
-For example, "max-age=60" indicates that the response can be cached and reused for the next 60 seconds.
-
-RFC: Max 1 year
+No support on heroku
 
 #VSLIDE
 
-### Cache-Control directives examples
+`yarn outdated`
 
-Cache-Control Header | Explanation
------------- | -------------
-max-age=86400 | Response can be cached by browser and any intermediary caches (that is, it's "public") for up to 1 day (60 seconds x 60 minutes x 24 hours).
-private, max-age=600 | Response can be cached by the client’s browser only for up to 10 minutes (60 seconds x 10 minutes).
-no-store | Response is not allowed to be cached and must be fetched in full on every request.
+![](./assets/img/yarn outdated.png)
 
 #VSLIDE
 
-###### Defining optimal Cache-Control policy
-![Decision Tree](assets/img/http-cache-decision-tree.png)
+##Perf
 
+`time npm i`                   ===> real  4m22.777s
 
-#VSLIDE
+`time $(yarn && npm rebuild)`  ===> real   1m34.147s
 
-### Client Caching and quick updates
-
-![Quick win](assets/img/http-cache-hierarchy.png)
-
-#VSLIDE
-
-### Caching checklist
-
-* Use consistent URLs
-* Ensure that the server provides a validation token (ETag)
-* Identify which resources can be cached by intermediaries
-* Determine the optimal cache lifetime for each resource
-* Determine the best cache hierarchy for your site
-* Minimize churn
-
-#HSLIDE
-
-# TD / TP
-
-![https://www.coorpacademy.com](https://www.coorpacademy.com)
-
-#HSLIDE
-
-Thank you :-)
-
-#VSLIDE
-
-### Slides
-
-https://github.com/CoorpAcademy/tekacademy/httpcache
-
-### Sources
-https://docs.trafficserver.apache.org/en/4.2.x/sdk/http-headers.en.html
-https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=fr

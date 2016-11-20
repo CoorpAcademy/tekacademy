@@ -58,18 +58,18 @@ __Linking__: Finally, Links everything together by copying to the local node_mod
 
 #HSLIDE
 
-Installation:
+__Installation__
 
 Standalone binary
 
-MacOsX
+*MacOsX*
 
 ```
 brew update
 brew install yarn
 ```
 
-Linux
+*Linux*
 
 * Debian/Ubuntu Linux
 * CentOS / Fedora / RHEL
@@ -229,7 +229,7 @@ Bugsnag:  Error: Could not locate the bindings file. Tried:
 
 ===> Good
 
-## __Yarn is not weel tested from now!__
+## __Yarn is not well tested!__
 
 #HSLIDE
 
@@ -310,6 +310,7 @@ Simple lock structure to avoid git merge collision
   resolved "https://registry.npmjs.org/@coorpacademy/components/-/components-3.5.6.tgz#25571b4c3e4d55be4679fe27cc0b64dd65d4472a"
   dependencies:
     "@coorpacademy/treantjs-core" "^3.5.0"
+    api-check "^7.5.5"
     file-loader "^0.9.0"
     hyperx "^2.0.4"
     lodash "^4.14.1"

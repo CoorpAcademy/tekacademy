@@ -277,7 +277,7 @@ info Amount of shared dependencies: 0
 
 ## Workaround
 
-`$ jq 'del(.devDependencies)' package.json > tmp.json && mv tmp.json package.json`
+```$ jq 'del(.devDependencies)' package.json > tmp.json && mv tmp.json package.json```
 
 #HSLIDE
 
@@ -285,9 +285,9 @@ info Amount of shared dependencies: 0
 
 Always lock dependencies
 
-Add `yarn add baucis`
+Add ```yarn add baucis```
 
-Remove `yarn remove baucis`
+Remove ```yarn remove baucis```
 
 Simple lock structure to avoid git merge collision
 

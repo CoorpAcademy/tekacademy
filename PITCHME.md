@@ -10,7 +10,7 @@ __Secure__
 
 ## WHo?
 
-Facebook but also Google, Tile & Eposent
+Facebook but also Google, Tile & Exposent
 
 ## Why?
 
@@ -24,7 +24,7 @@ Npm caveats:
 
 ##How?
 
-Yarn resolves these issues around versioning and non-determinism by using lockfiles and an install algorithm that is deterministic and reliable.
+Yarn resolves these issues around versioning and non-determinism by using lockfiles and an install algorithm that is **deterministic** and **reliable**.
 
 #VSLIDE
 
@@ -115,6 +115,8 @@ Side effect of brew instal yarn
 * must change the path 
 `export PATH="$PATH:$HOME/.yarn/bin"`
 * brew install node and break nvm
+
+#VSLIDE
 
 wait really instal like that?
 

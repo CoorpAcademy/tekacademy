@@ -1,2 +1,3 @@
 theme : white
 logo : assets/img/logo-v2-129x70.png
+theme-override : assets/css/PITCHME.css

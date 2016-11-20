@@ -1,12 +1,45 @@
 #HTTP Yarn
 
-*Fast*: Yarn caches every package it downloads so it never needs to download the same package again. It also parallelizes operations to maximize resource utilization so install times are faster than ever.
+__Fast__: 
+##### Yarn caches every package it downloads so it never needs to download the same package again. It also parallelizes operations to maximize resource utilization so install times are faster than ever.
 
-*Reliable*: Using a detailed, concise lockfile format and a deterministic algorithm for installs, Yarn is able to guarantee that an install that worked on one system will work exactly the same way on any other system.
+__Reliable__: 
+##### Using a detailed, concise lockfile format and a deterministic algorithm for installs, Yarn is able to guarantee that an install that worked on one system will work exactly the same way on any other system.
 
-*Secure*: Yarn uses checksums to verify the integrity of every installed package before its code is executed.
+__Secure__:
+##### Yarn uses checksums to verify the integrity of every installed package before its code is executed.
 
 #VSLIDE
+
+## WHo?
+
+Facebook but also Google, Tile & Eposent
+
+## Why?
+
+Npm caveats:
+* not reliable
+* not always the same resolution path
+* shrinkwrap not by default
+* can't be offline
+
+#VSLIDE
+
+##How?
+
+Yarn resolves these issues around versioning and non-determinism by using lockfiles and an install algorithm that is deterministic and reliable.
+
+#VSLIDE
+
+## Workflow
+
+3steps:
+
+__Resolution__: Resolve dependencies by making requests to the registry and recursively looking up each dependency.
+__Fetching__: Looks in a global cache directory t. If it's missing, Yarn fetches the tarball for the package and places it in the global cache. Support source control full offline installs.
+__Linking__: Finally, Links everything together by copying to the local node_modules folder.
+
+#HVSLIDE
 
 Installation:
 

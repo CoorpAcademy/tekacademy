@@ -335,9 +335,10 @@ Fix possible with *heroku-prebuilt* hook
 
 ##Perf
 
-`time npm i`                   ===> real  4m22.777s
-
-`time $(yarn && npm rebuild)`  ===> real   1m34.147s
+```
+time npm i ===> real  4m22.777s
+time yarn  ===> real   1m0.048s
+```
 
 #HSLIDE
 

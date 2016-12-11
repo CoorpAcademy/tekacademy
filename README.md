@@ -1,3 +1,3 @@
 # tekacademy
 
-===> [https://gitpitch.com/coorpacademy/tekacademy/kafka](https://gitpitch.com/coorpacademy/tekacademy/kafka)
+===> [https://gitpitch.com/coorpacademy/tekacademy/rxjs](https://gitpitch.com/coorpacademy/tekacademy/rxjs)

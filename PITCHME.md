@@ -9,6 +9,15 @@
 - xxx
 
 #HSLIDE
+### Install
+
+- npm install -g parker
+
+### Run
+
+- parker mystyle.css
+
+#HSLIDE
 ### What is PostCSS?
 
 - xxx

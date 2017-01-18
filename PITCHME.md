@@ -9,11 +9,15 @@ npm install -g parker
 
 #HSLIDE
 ### Run on compilated CSS
-//
+```js
 parker path/mystyle.css
+``
+![css](assets/css.png)
 
-![atomic](assets/atomic.png)
-![components](assets/components.png)
+#HSLIDE
+- Total Stylsheets
+- Total Size
+- 
 
 #HSLIDE
 ### What is PostCSS?

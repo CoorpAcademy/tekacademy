@@ -17,6 +17,7 @@ parker path/mystyle.css
 
 #HSLIDE
 ### WHAT ?
+
 ![composition](assets/composition.png)
 - Total stylsheets
 - Total size
@@ -25,6 +26,7 @@ parker path/mystyle.css
 - ...
 
 #HSLIDE
+
 ### How to use metrics ?
 
 Selectors / Rules 
@@ -38,9 +40,10 @@ atomic.css
 ```
 Total Stylesheet Size: 279114
 ```
+
 #HSLIDE
 
-Selectors / Rule
+###Selectors / Rule
 
 components.css
 ```
@@ -56,7 +59,7 @@ Closest to 1
 
 #HSLIDE
 
-Identifiers / Selectors
+###Identifiers / Selectors
 
 components.css
 ```
@@ -72,7 +75,7 @@ Should be between 1 & 2
 
 #HSLIDE
 
-Specificity / Selector
+###Specificity / Selector
 
 components.css
 ```
@@ -88,7 +91,7 @@ closest to 10, better it is (don't go over 20)
 
 #HSLIDE
 
-Specificity / Selector
+###Specificity / Selector
 
 components.css
 ```
@@ -104,7 +107,7 @@ Top Selector Specificity Selector: .nprogress-custom-parent #nprogress .spinner
 
 #HSLIDE
 
-ID Selector
+###ID Selector
 
 components.css
 ```
@@ -118,7 +121,7 @@ Total Id Selectors: 21
 
 #HSLIDE
 
-Unique Color
+###Unique Color
 
 components.css
 ```
@@ -134,7 +137,7 @@ Unique Colors: #FFFF00,#000000,#C0C0C0,#F7F7F7,#00B0FF,#FFFFFF,#333333,#ED1C24,#
 
 #HSLIDE
 
-Important keywords
+###Important keywords
 
 components.css
 ```
@@ -148,7 +151,17 @@ Total Important Keywords: 66
 
 #HSLIDE
 
-- Total Media Queries
+###Total Media Queries
+
+components.css
+```
+Total Media Queries: 3
+```
+
+atomic.css
+```
+Total Media Queries: 9
+```
 
 #HSLIDE
 

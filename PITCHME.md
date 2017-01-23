@@ -241,7 +241,7 @@ packing same CSS media query rules into one
   }
 }
 ```
-#HSLIDE
+#VSLIDE
 
 into
 

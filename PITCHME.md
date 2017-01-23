@@ -265,11 +265,13 @@ into
 That tries to fix all of flexbug's issues :)
 
 Input
-``
+
+```
 .foo { flex: 1; }
 ```
 
 Output
+
 ```
 .foo { flex: 1 1 0%; }
 ```

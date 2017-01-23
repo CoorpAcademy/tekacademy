@@ -185,6 +185,8 @@ Local or not ?
 
 Transforming styles with JS plugins
 
+#HSLIDE
+
 Already used :
 
 - postcss-modules-extract-imports (extract local aliases for inline imports)

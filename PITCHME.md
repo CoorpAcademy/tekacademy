@@ -198,6 +198,17 @@ Already used :
 ###PostCSS Sprites
 
 Browse all the images that are used in your CSS and build a Sprite file
+```
+/* Input */
+.comment { background: url(images/sprite/ico-comment.png) no-repeat 0 0; }
+.bubble { background: url(images/sprite/ico-bubble.png) no-repeat 0 0; }
+
+/* ---------------- */
+
+/* Output */
+.comment { background-image: url(images/sprite.png); background-position: 0 0; }
+.bubble { background-image: url(images/sprite.png); background-position: 0 -50px; }
+```
 
 https://github.com/2createStudio/postcss-sprites
 
@@ -232,13 +243,7 @@ packing same CSS media query rules into one
 into
 
 ```
-.foo::before {
-  content: "foo on small";
-}
-
-.bar::before {
-  content: "bar on small";
-}
+...
 
 @media screen and (min-width: 769px) {
   .foo::before {
@@ -257,17 +262,12 @@ into
 CSS linter
 ![example](assets/example.png)
 
-#HSLIDE
-
-###PXtoREM
-
-Converts pixel units to rem
 
 #HSLIDE
 
 ###CSSNANO
 
-A modular minifier, built on top of the PostCSS ecosystem
+cssnano is a modular minifier that aims to utilise small modules from the PostCSS ecosystem, rather than being an all-encompassing module that may be difficult to contribute to. Because it is written on top of PostCSS, it is able to do more than simple whitespace transforms - including advanced optimisations such as custom identifier reduction, z-index rebasing, and adjacent selector merging.
 
 #HSLIDE
 
@@ -275,12 +275,46 @@ A modular minifier, built on top of the PostCSS ecosystem
 
 generate a style guide automatically
 
+```
+/*
+@styleguide
+
+@title Button
+
+Use the button classes on and `<a>`, `<button>`, `<input>` elements.
+
+<button class="button button--large button--red">Red Button</button>
+
+    <button class="button button--large button--red">Red Button</button>
+
+<button class="button button--large button--blue">Red Button</button>
+
+    <button class="button button--large button--blue">Red Button</button>
+*/
+```
+
+#HSLIDE
+
+###PostCSS Nested
+
+Unwrap nested rules like how Sass does it
+
+![nested](assets/nested.png)
+
+#HSLIDE
+
+###PostCSS Nested-props
+
+Unwrap nested props
+
+![nestedprops](assets/nestedprops.png)
+
 #HSLIDE
 
 ###LINKS
 - https://github.com/katiefenn/parker
 - http://csswizardry.com/2016/06/improving-your-css-with-parker/
 - http://coreybruyere.com/css-audit-with-parker/
-
+- https://github.com/postcss/postcss/blob/master/docs/plugins.md
 - https://www.grafikart.fr/tutoriels/html-css/postcss-663
 - http://postcss.parts/

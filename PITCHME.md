@@ -12,7 +12,10 @@
 
 Static Analysis tool for CSS files
 
+```
 npm install -g parker
+``
+
 
 #HSLIDE
 ### Run on compilated CSS
@@ -35,7 +38,7 @@ parker path/mystyle.css
 
 ### How to use metrics ?
 
-Selectors / Rules 
+Total Size
 
 components.css
 ```
@@ -83,6 +86,9 @@ Should be between 1 & 2
 
 ###Specificity / Selector
 
+```
+.post__title a:visited~.post__status:after
+```
 components.css
 ```
 Specificity Per Selector: 16.54625850340136
@@ -172,17 +178,19 @@ Total Media Queries: 9
 #HSLIDE
 
 
-Local or Dependency ?
+Local or not ?
 
 #HSLIDE
 ### What is PostCSS?
 
+Transforming styles with JS plugins
+
 Already used :
 
-- postcss-modules-extract-imports
-- postcss-modules-local-by-default
-- postcss-modules-scope
-- postcss-modules-values
+- postcss-modules-extract-imports (extract local aliases for inline imports)
+- postcss-modules-local-by-default (make local scope the default)
+- postcss-modules-scope (extract export statements from local-scope classes)
+- postcss-modules-values (Pass arbitrary constants between your module files)
 
 
 #HSLIDE
@@ -191,17 +199,63 @@ Already used :
 
 Browse all the images that are used in your CSS and build a Sprite file
 
+https://github.com/2createStudio/postcss-sprites
+
 #HSLIDE
 
-###CSS-MQPacker
+###CSS-MQPacker 
 
 packing same CSS media query rules into one
+
+```
+.foo::before {
+  content: "foo on small";
+}
+
+@media screen and (min-width: 769px) {
+  .foo::before {
+    content: "foo on medium";
+  }
+}
+
+.bar::before {
+  content: "bar on small";
+}
+
+@media screen and (min-width: 769px) {
+  .bar::before {
+    content: "bar on medium";
+  }
+}
+```
+
+into
+
+```
+.foo::before {
+  content: "foo on small";
+}
+
+.bar::before {
+  content: "bar on small";
+}
+
+@media screen and (min-width: 769px) {
+  .foo::before {
+    content: "foo on medium";
+  }
+  .bar::before {
+    content: "bar on medium";
+  }
+}
+```
 
 #HSLIDE
 
 ###StyleLint
 
-obvious =)
+CSS linter
+![example](assets/example.png)
 
 #HSLIDE
 

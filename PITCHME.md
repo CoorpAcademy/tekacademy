@@ -14,7 +14,7 @@ Static Analysis tool for CSS files
 
 ```
 npm install -g parker
-``
+```
 
 
 #HSLIDE

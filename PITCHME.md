@@ -265,7 +265,7 @@ into
 That tries to fix all of flexbug's issues :)
 
 Input
-```
+``
 .foo { flex: 1; }
 ```
 
@@ -288,29 +288,7 @@ CSS linter
 
 cssnano is a modular minifier that aims to utilise small modules from the PostCSS ecosystem, rather than being an all-encompassing module that may be difficult to contribute to. 
 
-#HSLIDE
 
-###Style Guide
-
-generate a style guide automatically
-
-```
-/*
-@styleguide
-
-@title Button
-
-Use the button classes on and `<a>`, `<button>`, `<input>` elements.
-
-<button class="button button--large button--red">Red Button</button>
-
-    <button class="button button--large button--red">Red Button</button>
-
-<button class="button button--large button--blue">Red Button</button>
-
-    <button class="button button--large button--blue">Red Button</button>
-*/
-```
 #HSLIDE
 
 ###PostCSS

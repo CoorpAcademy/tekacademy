@@ -260,6 +260,22 @@ into
 
 #HSLIDE
 
+###FlexBugs fixes
+
+That tries to fix all of flexbug's issues :)
+
+Input
+```
+.foo { flex: 1; }
+```
+
+Output
+```
+.foo { flex: 1 1 0%; }
+```
+
+#HSLIDE
+
 ###StyleLint
 
 CSS linter
@@ -270,7 +286,7 @@ CSS linter
 
 ###CSSNANO
 
-cssnano is a modular minifier that aims to utilise small modules from the PostCSS ecosystem, rather than being an all-encompassing module that may be difficult to contribute to. Because it is written on top of PostCSS, it is able to do more than simple whitespace transforms - including advanced optimisations such as custom identifier reduction, z-index rebasing, and adjacent selector merging.
+cssnano is a modular minifier that aims to utilise small modules from the PostCSS ecosystem, rather than being an all-encompassing module that may be difficult to contribute to. 
 
 #HSLIDE
 

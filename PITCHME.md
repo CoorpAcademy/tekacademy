@@ -1,14 +1,37 @@
 # Jest
 ![Logo](https://cdn.auth0.com/blog/testing-react-with-jest/logo.png)
 
-### JavaScript test runner
-#####maintained by Facebook
+### JS test runner
+maintained by Facebook <!-- .element: class="fragment" -->
 
 #HSLIDE
-- Performance <!-- .element: class="fragment" -->
+### Test runner
+
+- Performance (parallel processes)<!-- .element: class="fragment" -->
 - Mocking <!-- .element: class="fragment" -->
 - Snapshot testing <!-- .element: class="fragment" -->
+- Code coverage <!-- .element: class="fragment" -->
 
+#HSLIDE
+### migrating from AVA
+
+#VSLIDE
+### jest-codemod
+Codemods that simplify migrating JavaScript test files from Mocha, Tape and AVA to Jest.
+
+```
+npm install -g jest-codemods
+jest-codemods
+```<!-- .element: class="fragment" -->
+
+![packages](assets/codemod-1.png) <!-- .element: class="fragment" -->
+
+![packages](assets/codemod-2.png) <!-- .element: class="fragment" -->
+
+![packages](assets/codemod-info.png) <!-- .element: class="fragment" -->
+
+#VSLIDE
+### manual migration
 
 #HSLIDE
 ##sources

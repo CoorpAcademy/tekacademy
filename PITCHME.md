@@ -30,22 +30,38 @@ test(`${it} › instanciated and resolved | no options`, t => {
 #VSLIDE
 #### Enzyme
 - Runs with any test runner <!-- .element: class="fragment" -->
-- example with [AVA](https://github.com/airbnb/enzyme/blob/master/docs/guides/tape-ava.md#ava) <!-- .element: class="fragment" -->
+- [example with AVA](https://github.com/airbnb/enzyme/blob/master/docs/guides/tape-ava.md#ava) <!-- .element: class="fragment" -->
 
 #VSLIDE
 #### wait a minute...
-- Facebook maintains Jest <!-- .element: class="fragment" -->
-- [Kent C. Dodds](https://medium.com/@kentcdodds/migrating-to-jest-881f75366e7e#.gw98x58g8) explains why they left AVA at Paypal <!-- .element: class="fragment" -->
-- [Grommet](https://grommet.github.io/docs/box) <!-- .element: class="fragment" -->
+- [Grommet: React components library](https://grommet.github.io/docs/box) <!-- .element: class="fragment" -->
 
 #VSLIDE
 Grommet article about [tests](https://blog.grommet.io/post/2016/09/01/how-we-landed-on-jest-snapshot-testing-for-javascript)
 - React components library <!-- .element: class="fragment" -->
 - Manual DOM testing shallow rendering <!-- .element: class="fragment" -->
-- "As we don't have a DOM, the React lifecycle functions were not invoked. It got really hard to adequately exercise our components and get an acceptable level of code coverage. "<!-- .element: class="fragment" -->
+- "As we don't have a DOM, the React lifecycle functions were not invoked. It got really hard to adequately exercise our components and get an acceptable level of code coverage. " <!-- .element: class="fragment" -->
+- then they tried Jest snapshots
 
 #VSLIDE
-- if anything changes in the snapshot, the test fails.
+##snaphosts
+The first time this test is run, Jest creates a snapshot file that looks like this:
+
+```
+exports[`Link renders correctly 1`] = `
+<a
+  className="normal"
+  href="http://www.facebook.com"
+  onMouseEnter={[Function bound _onMouseEnter]}
+  onMouseLeave={[Function bound _onMouseLeave]}>
+  Facebook
+</a>
+`;
+```
+
+#VSLIDE
+- Snapshots are committed
+- if anything changes in the snapshot, the test fails.  <!-- .element: class="fragment" -->
 - It's up to the developer to inspect the snapshot and decide whether is an expected change or if it is a bug in their code. <!-- .element: class="fragment" -->
 
 #VSLIDE
@@ -56,6 +72,11 @@ Grommet article about [tests](https://blog.grommet.io/post/2016/09/01/how-we-lan
 #VSLIDE
 ##snaphosts
 ![](assets/snapshot.png)<!-- .element: class="fragment" -->
+
+#VSLIDE
+#### wait an other minute...
+- Facebook maintains Jest <!-- .element: class="fragment" -->
+- [Kent C. Dodds explains why they left AVA for Jest at Paypal](https://medium.com/@kentcdodds/migrating-to-jest-881f75366e7e#.gw98x58g8)  <!-- .element: class="fragment" -->
 
 #HSLIDE
 ## Jest
@@ -71,6 +92,7 @@ maintained by Facebook <!-- .element: class="fragment" -->
 - Mocking <!-- .element: class="fragment" -->
 - Snapshot testing <!-- .element: class="fragment" -->
 - Code coverage <!-- .element: class="fragment" -->
+- “zero-configuration” experience <!-- .element: class="fragment" -->
 
 #HSLIDE
 ### migrating from AVA

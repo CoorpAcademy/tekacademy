@@ -38,9 +38,11 @@ simple prompts
 
 #VSLIDE
 ### manual migration
-- jest config in package.json
-- `"testRegex": "/packages(/.*)?/src(/.*)?/test(?!/fixtures)(/.*)?/*.js$"`<!-- .element: class="fragment" -->
-- keywords (`it`, `expect`)<!-- .element: class="fragment" -->
+jest config in package.json
+
+`"testRegex": "/packages(/.*)?/src(/.*)?/test(?!/fixtures)(/.*)?/*.js$"` <!-- .element: class="fragment" -->
+
+keywords (`it`, `expect`)<!-- .element: class="fragment" -->
 
 #HSLIDE
 ##sources

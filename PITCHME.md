@@ -37,9 +37,9 @@ test(`${it} › instanciated and resolved | no options`, t => {
 #VSLIDE
 #### wait a minute...
 
-- Facebook maintains Jest
+- Facebook maintains Jest <!-- .element: class="fragment" -->
 - [Kent C. Dodds](https://medium.com/@kentcdodds/migrating-to-jest-881f75366e7e#.gw98x58g8) <!-- .element: class="fragment" -->
-- Grommet <!-- .element: class="fragment" -->
+- [Grommet](https://grommet.github.io/docs/box) <!-- .element: class="fragment" -->
   - React components library<!-- .element: class="fragment" -->
   - Manual DOM testing  -> shallow rendering <!-- .element: class="fragment" -->
   - No DOM ==> no React life

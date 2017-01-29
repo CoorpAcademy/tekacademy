@@ -29,16 +29,13 @@ test(`${it} › instanciated and resolved | no options`, t => {
 
 #VSLIDE
 #### Enzyme
-
-- [find()](https://github.com/airbnb/enzyme/blob/master/docs/api/selector.md)
-- any test runner <!-- .element: class="fragment" -->
+- Runs with any test runner <!-- .element: class="fragment" -->
 - example with [AVA](https://github.com/airbnb/enzyme/blob/master/docs/guides/tape-ava.md#ava) <!-- .element: class="fragment" -->
 
 #VSLIDE
 #### wait a minute...
-
 - Facebook maintains Jest <!-- .element: class="fragment" -->
-- [Kent C. Dodds](https://medium.com/@kentcdodds/migrating-to-jest-881f75366e7e#.gw98x58g8) <!-- .element: class="fragment" -->
+- [Kent C. Dodds](https://medium.com/@kentcdodds/migrating-to-jest-881f75366e7e#.gw98x58g8) explains why they left AVA at Paypal <!-- .element: class="fragment" -->
 - [Grommet](https://grommet.github.io/docs/box) <!-- .element: class="fragment" -->
 
 #VSLIDE

@@ -23,15 +23,18 @@ Codemods that simplify migrating JavaScript test files from Mocha, Tape and AVA 
 ```
 npm install -g jest-codemods
 jest-codemods
-```<!-- .element: class="fragment" -->
+```
 
 #VSLIDE
+simple prompts
 ![packages](assets/codemod-1.png) <!-- .element: class="fragment" -->
 
 ![packages](assets/codemod-2.png) <!-- .element: class="fragment" -->
 
 #VSLIDE
 ![packages](assets/codemod-info.png)
+
+![packages](assets/results-1-after-codemod.png)<!-- .element: class="fragment" -->
 
 #VSLIDE
 ### manual migration

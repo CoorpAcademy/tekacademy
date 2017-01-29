@@ -40,9 +40,12 @@ test(`${it} › instanciated and resolved | no options`, t => {
 - Facebook maintains Jest <!-- .element: class="fragment" -->
 - [Kent C. Dodds](https://medium.com/@kentcdodds/migrating-to-jest-881f75366e7e#.gw98x58g8) <!-- .element: class="fragment" -->
 - [Grommet](https://grommet.github.io/docs/box) <!-- .element: class="fragment" -->
-  - React components library<!-- .element: class="fragment" -->
-  - Manual DOM testing  -> shallow rendering <!-- .element: class="fragment" -->
-  - No DOM ==> no React life
+
+#VSLIDE
+Grommet article about [tests](https://blog.grommet.io/post/2016/09/01/how-we-landed-on-jest-snapshot-testing-for-javascript)
+- React components library <!-- .element: class="fragment" -->
+- Manual DOM testing shallow rendering <!-- .element: class="fragment" -->
+- "As we don't have a DOM, the React lifecycle functions were not invoked. It got really hard to adequately exercise our components and get an acceptable level of code coverage. "<!-- .element: class="fragment" -->
 
 #VSLIDE
 - if anything changes in the snapshot, the test fails.

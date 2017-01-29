@@ -180,7 +180,7 @@ silent watch
 #HSLIDE
 ##Next for @Coorponents
 - AVA vs Jest <!-- .element: class="fragment" -->
-- ![](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSemj2tvkjxAA-G1ujwxSA5eE6uRLmX0UHSEKu0MK2NPlPCE5K2GA) <!-- .element: class="fragment" -->
+- ![buuuurn](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSemj2tvkjxAA-G1ujwxSA5eE6uRLmX0UHSEKu0MK2NPlPCE5K2GA) <!-- .element: class="fragment" -->
 - to snapshot or not to snapshot ? <!-- .element: class="fragment" -->
 - shallow rendering <!-- .element: class="fragment" -->
 

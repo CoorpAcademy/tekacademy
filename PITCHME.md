@@ -22,8 +22,7 @@ test(`${it} › instanciated and resolved | no options`, t => {
 - In this way, we only need to check that the correct props are passed to subcomponents, and don’t need to worry about their inner details here <!-- .element: class="fragment" -->
 
 #VSLIDE
-reading TestUtils documentation...
-
+- reading TestUtils documentation...
 - Facebook recommends Enzyme by Airbnb <!-- .element: class="fragment" -->
 - provides tools to manipulate/traverse React output <!-- .element: class="fragment" -->
 - [Example](http://airbnb.io/enzyme/docs/api/shallow.html#shallow-rendering-api]) <!-- .element: class="fragment" -->

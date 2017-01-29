@@ -27,28 +27,30 @@ Codemods that simplify migrating JavaScript test files from Mocha, Tape and AVA 
 
 #VSLIDE
 simple prompts
-![packages](assets/codemod-1.png) <!-- .element: class="fragment" -->
+![](assets/codemod-1.png) <!-- .element: class="fragment" -->
 
-![packages](assets/codemod-2.png) <!-- .element: class="fragment" -->
+![](assets/codemod-2.png) <!-- .element: class="fragment" -->
 
 #VSLIDE
-![packages](assets/codemod-info.png)
+![](assets/codemod-info.png)
 
-![packages](assets/results-1-after-codemod.png)<!-- .element: class="fragment" -->
+![](assets/results-1-after-codemod.png)<!-- .element: class="fragment" -->
 
 #VSLIDE
 ### manual migration
 jest config in package.json
 
 #VSLIDE
-`"testRegex": "/packages(/.*)?/src(/.*)?/test(?!/fixtures)(/.*)?/*.js$"`
+```
+"testRegex": "/packages(/.*)?/src(/.*)?/test(?!/fixtures)(/.*)?/*.js$"
+```
 
-![packages](assets/results-1-after-regex.png)<!-- .element: class="fragment" -->
+![](assets/results-2-after-regex.png)<!-- .element: class="fragment" -->
 
 #VSLIDE
 keywords (`it`, `expect`)
 
-![packages](assets/results-1-after-corrections.png)<!-- .element: class="fragment" -->
+![](assets/results-3-after-corrections.png)<!-- .element: class="fragment" -->
 
 #HSLIDE
 ##Testing React components
@@ -64,7 +66,7 @@ keywords (`it`, `expect`)
 #HSLIDE
 ##snaphosts
 
-![packages](assets/snapshot.png)<!-- .element: class="fragment" -->
+![](assets/snapshot.png)<!-- .element: class="fragment" -->
 
 #HSLIDE
 ##coverage --> Istanbul

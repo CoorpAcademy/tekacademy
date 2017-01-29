@@ -38,7 +38,6 @@ test(`${it} › instanciated and resolved | no options`, t => {
 
 #VSLIDE
 Grommet article about [tests](https://blog.grommet.io/post/2016/09/01/how-we-landed-on-jest-snapshot-testing-for-javascript)
-- React components library <!-- .element: class="fragment" -->
 - Manual DOM testing shallow rendering <!-- .element: class="fragment" -->
 - "As we don't have a DOM, the React lifecycle functions were not invoked. It got really hard to adequately exercise our components and get an acceptable level of code coverage. " <!-- .element: class="fragment" -->
 - then they tried Jest snapshots <!-- .element: class="fragment" -->
@@ -78,12 +77,20 @@ exports[`Link renders correctly 1`] = `
 - Facebook maintains Jest <!-- .element: class="fragment" -->
 - [Kent C. Dodds explains why they left AVA for Jest at Paypal](https://medium.com/@kentcdodds/migrating-to-jest-881f75366e7e#.gw98x58g8)  <!-- .element: class="fragment" -->
 
+
+
+
+
+
+
+
+
+
 #HSLIDE
 ## Jest
 ![Logo](https://cdn.auth0.com/blog/testing-react-with-jest/logo.png)
 
 ### JS test runner
-maintained by Facebook <!-- .element: class="fragment" -->
 
 #HSLIDE
 ### Global picture
@@ -137,7 +144,8 @@ jest config in package.json
 #VSLIDE
 ##coverage --> Istanbul
 "easy" copy from `nyc` settings
-``
+
+```
 "coverageDirectory": "coverage",
     "coverageReporters": [
       "lcov",
@@ -173,6 +181,8 @@ silent watch
 
 #HSLIDE
 ##sources
+
+- [Shallow rendering](http://farisj.github.io/2016/01/02/testing-react-components-with-shallow-rendering.html)
 
 - Testing React with [Jest](https://auth0.com/blog/testing-react-applications-with-jest/?utm_source=echojs&utm_medium=sc&utm_campaign=testing_react_jest)
 

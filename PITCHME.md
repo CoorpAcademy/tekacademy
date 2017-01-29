@@ -30,7 +30,7 @@ test(`${it} › instanciated and resolved | no options`, t => {
 #VSLIDE
 #### Enzyme
 
-- [`.find()`](https://github.com/airbnb/enzyme/blob/master/docs/api/selector.md)
+- [find()](https://github.com/airbnb/enzyme/blob/master/docs/api/selector.md)
 - any test runner <!-- .element: class="fragment" -->
 - example with [AVA](https://github.com/airbnb/enzyme/blob/master/docs/guides/tape-ava.md#ava) <!-- .element: class="fragment" -->
 

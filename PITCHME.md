@@ -22,17 +22,22 @@ test(`${it} › instanciated and resolved | no options`, t => {
 - In this way, we only need to check that the correct props are passed to subcomponents, and don’t need to worry about their inner details here <!-- .element: class="fragment" -->
 
 #VSLIDE
-## reading TestUtils documentation...
+reading TestUtils documentation...
+
 - Facebook recommends Enzyme by Airbnb <!-- .element: class="fragment" -->
 - provides tools to manipulate/traverse React output <!-- .element: class="fragment" -->
-- [](http://airbnb.io/enzyme/docs/api/shallow.html#shallow-rendering-api]) <!-- .element: class="fragment" -->
+- [Example](http://airbnb.io/enzyme/docs/api/shallow.html#shallow-rendering-api]) <!-- .element: class="fragment" -->
 
 #VSLIDE
-- [`.find()`](https://github.com/airbnb/enzyme/blob/master/docs/api/selector.md) <!-- .element: class="fragment" -->
+#### Enzyme
+
+- [`.find()`](https://github.com/airbnb/enzyme/blob/master/docs/api/selector.md)
 - any test runner <!-- .element: class="fragment" -->
 - example with [AVA](https://github.com/airbnb/enzyme/blob/master/docs/guides/tape-ava.md#ava) <!-- .element: class="fragment" -->
 
 #VSLIDE
+#### wait a minute...
+
 - Facebook maintains Jest
 - [Kent C. Dodds](https://medium.com/@kentcdodds/migrating-to-jest-881f75366e7e#.gw98x58g8) <!-- .element: class="fragment" -->
 - Grommet <!-- .element: class="fragment" -->

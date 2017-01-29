@@ -23,11 +23,13 @@ test(`${it} › instanciated and resolved | no options`, t => {
 
 #VSLIDE
 ## Enzyme
-- by Airbnb,
+
+- by Airbnb, recommended by Facebook in TestUtils documentation.
 - provides tools to manipulate/traverse React output <!-- .element: class="fragment" -->
 - http://airbnb.io/enzyme/docs/api/shallow.html#shallow-rendering-api <!-- .element: class="fragment"
 
 #VSLIDE
+
 - [`.find()`](https://github.com/airbnb/enzyme/blob/master/docs/api/selector.md) <!-- .element: class="fragment" -->
 - any test runner <!-- .element: class="fragment" -->
 - example with [AVA](https://github.com/airbnb/enzyme/blob/master/docs/guides/tape-ava.md#ava) <!-- .element: class="fragment" -->

@@ -5,7 +5,7 @@
 maintained by Facebook <!-- .element: class="fragment" -->
 
 #HSLIDE
-### Test runner
+### Global picture
 
 - Performance (parallel processes)<!-- .element: class="fragment" -->
 - Mocking <!-- .element: class="fragment" -->
@@ -40,9 +40,55 @@ simple prompts
 ### manual migration
 jest config in package.json
 
-`"testRegex": "/packages(/.*)?/src(/.*)?/test(?!/fixtures)(/.*)?/*.js$"` <!-- .element: class="fragment" -->
+#VSLIDE
+`"testRegex": "/packages(/.*)?/src(/.*)?/test(?!/fixtures)(/.*)?/*.js$"`
 
-keywords (`it`, `expect`)<!-- .element: class="fragment" -->
+![packages](assets/results-1-after-regex.png)<!-- .element: class="fragment" -->
+
+#VSLIDE
+keywords (`it`, `expect`)
+
+![packages](assets/results-1-after-corrections.png)<!-- .element: class="fragment" -->
+
+#HSLIDE
+##Testing React components
+
+#HSLIDE
+##enzyme by Airbnb
+- provides tools to manipulate/traverse React output<!-- .element: class="fragment" -->
+- any test runner<!-- .element: class="fragment" -->
+- shallow (without children)<!-- .element: class="fragment" -->
+- mount (entire component)<!-- .element: class="fragment" -->
+- example with [AVA](https://github.com/airbnb/enzyme/blob/master/docs/guides/tape-ava.md#ava)<!-- .element: class="fragment" -->
+
+#HSLIDE
+##snaphosts
+
+![packages](assets/snapshot.png)<!-- .element: class="fragment" -->
+
+#HSLIDE
+##coverage --> Istanbul
+```
+"coverageDirectory": "coverage",
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "packages/**/src/**/*.js",
+      "!**/test/**",
+      "!**/node_modules/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/packages(/.*)?/src(/.*)?/test(/.*)?$",
+      "/packages(/.*)?/dist(/.*)?$",
+      "/packages(/.*)?/es(/.*)?$",
+      "/packages(/.*)?/lib(/.*)?$"
+    ]
+```
+
+![packages](assets/coverage.png)<!-- .element: class="fragment" -->
 
 #HSLIDE
 ##sources

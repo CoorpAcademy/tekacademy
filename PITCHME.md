@@ -1,6 +1,6 @@
 #HSLIDE
 ##Testing React components
-- components v4 --> React
+- components v4 --> React <!-- .element: class="fragment" -->
 
 #VSLIDE
 UT today: we render the whole Component

@@ -92,7 +92,7 @@ exports[`Link renders correctly 1`] = `
 
 ### JS test runner
 
-#HSLIDE
+#VSLIDE
 ### Global picture
 
 - Performance (parallel processes)<!-- .element: class="fragment" -->
@@ -101,7 +101,7 @@ exports[`Link renders correctly 1`] = `
 - Code coverage <!-- .element: class="fragment" -->
 - “zero-configuration” experience <!-- .element: class="fragment" -->
 
-#HSLIDE
+#VSLIDE
 ### migrating from AVA
 
 #VSLIDE
@@ -171,6 +171,11 @@ jest config in package.json
 #VSLIDE
 silent watch
 ![packages](assets/watch.png)
+
+
+
+
+
 
 #HSLIDE
 ##Next for @Coorponents

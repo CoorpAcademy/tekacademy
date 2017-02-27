@@ -59,8 +59,6 @@ The static configuration is the global configuration which is setting up connect
 
 Both static global configuration and dynamic configuration can be sorted in a Key-value store.
 
-This section explains how to launch Træfɪk using a configuration loaded from a Key-value store.
-
 Træfɪk supports several Key-value stores:
 
 * Consul

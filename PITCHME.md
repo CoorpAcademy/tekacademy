@@ -34,7 +34,49 @@ Træfɪk is a modern HTTP reverse proxy and load balancer made to deploy microse
 
 ![Logo](img/rproxy.png)
 
+#HSLIDE
+# Configuration
+
+Træfɪk can be configured using many configuration sources with the following precedence order. Each item takes precedence over the item below it
+
+* Key-value Store   
+* Arguments
+* Configuration file
+* Default
+
 #VSLIDE
+
+# Static
+
+The static configuration is the global configuration which is setting up connections to configuration backends and entrypoints.
+
+* [traefik.sample.toml](https://raw.githubusercontent.com/containous/traefik/master/traefik.sample.toml)
+* [commented doc](http://coment.me/90BkmY2)
+
+# VSLIDE
+
+# Dynamic
+
+Both static global configuration and dynamic configuration can be sorted in a Key-value store.
+
+This section explains how to launch Træfɪk using a configuration loaded from a Key-value store.
+
+Træfɪk supports several Key-value stores:
+
+* Consul
+* etcd
+* ZooKeeper
+* boltdb
+
+Link: [commented doc](http://coment.me/qpMZvcR)
+
+#HSLIDE
+
+## Demo?
+
+![Logo](img/demo.gif)
+
+#HSLIDE
 ## links
 
 * Documentation [https://docs.traefik.io]()
@@ -42,13 +84,7 @@ Træfɪk is a modern HTTP reverse proxy and load balancer made to deploy microse
 * Support [https://traefik.slack.com]()
 * [https://github.com/containous/traefik/examples](https://github.com/containous/traefik/tree/master/examples)
 
-#VSLIDE
-
-## Demo?
-
-![Logo](img/demo.gif)
-
-#VSLIDE
+#HSLIDE
 
 **Questions?**
 

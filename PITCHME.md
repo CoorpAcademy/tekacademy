@@ -53,7 +53,7 @@ The static configuration is the global configuration which is setting up connect
 * [traefik.sample.toml](https://raw.githubusercontent.com/containous/traefik/master/traefik.sample.toml)
 * [commented doc](http://coment.me/90BkmY2)
 
-# VSLIDE
+#VSLIDE
 
 # Dynamic
 

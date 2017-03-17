@@ -23,7 +23,7 @@ cd my-repo
 npm run storybook
 ```
 
-![storybook#1](assets/storybook#1.png)
+![storybook1](assets/storybook1.png)
 
 #HSLIDE
 

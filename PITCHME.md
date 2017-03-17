@@ -1,6 +1,6 @@
 # StoryBook
 
-![css](assets/logo.png)
+![logobig](assets/logobig.png)
 
 #HSLIDE
 ### What is Parker CSS?

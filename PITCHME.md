@@ -35,6 +35,7 @@ npm run storybook
 - Action logger
 
 [STORYBOOK-DEMO](http://localhost:9009/)
+
 [COORP-DEMO](http://localhost:3004/)
 
 #VSLIDE
@@ -84,6 +85,16 @@ function loadStories() {
 configure(loadStories, module);
 
 ```
+
+#HSLIDE
+
+### WHAT NOW ?
+
+- Overview on components
+- Better understanding
+- Testing each component
+- Exporting as a static app
+
 #HSLIDE
 
 ### TESTING
@@ -100,3 +111,7 @@ Babel, Webpack, css, ES2016
 
 #HSLIDE
 
+### Links
+
+- [StoryBook doc](https://getstorybook.io/docs)
+- [ReactConf2017](https://www.youtube.com/watch?v=rMf3nDUfUpY&feature=youtu.be&t=4704)

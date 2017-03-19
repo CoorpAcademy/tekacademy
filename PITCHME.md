@@ -86,6 +86,26 @@ configure(loadStories, module);
 
 ```
 
+#VSLIDE
+
+### Adding Actions
+
+"Action" is an Storybook Addon
+
+```
+import { storiesOf, action } from '@kadira/storybook'
+// or import { action } from '@kadira/storybook-addon-actions'
+
+storiesOf('Button', module)
+  .add('default view', () => (
+    <Button onClick={ action('button-click') }>
+      Hello World!
+    </Button>
+  ))
+
+```
+
+
 #HSLIDE
 
 ### WHAT NOW ?

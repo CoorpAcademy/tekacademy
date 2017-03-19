@@ -44,6 +44,8 @@ it's all about stories
 
 1 story === 1 fixtures
 
+![storyFixture](assets/storyFixture.png)
+
 #VSLIDE
 
 ### Writing a story

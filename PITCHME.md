@@ -34,7 +34,8 @@ npm run storybook
 - Automatic render
 - Action logger
 
-[DEMO](http://localhost:6006/)
+[STORYBOOK-DEMO](http://localhost:9009/)
+[COORP-DEMO](http://localhost:3004/)
 
 #VSLIDE
 
@@ -74,23 +75,28 @@ storiesOf('Button', module)
 load all of them
 
 ```
-pipe(
-  toPairs,
-  map(([folderName, _folder]) => ([
-    folderName,
-    pipe(
-      toPairs,
-      map(([componentName, factory]) => {
-        const _fixtures = get([folderName, componentName], fixtures);
-        const stories = storiesOf(`${folderName}.${componentName}`, module);
-        pipe(
-          toPairs,
-          map(([fixtureName, fixture]) => {
-            stories.add(fixtureName, () => React.createElement(factory, fixture.props));
-          })
-        )(_fixtures);
-      })
-    )(_folder)
-  ]))
-)(components);
+import { configure } from '@kadira/storybook';
+
+function loadStories() {
+  require('../storybook');
+}
+
+configure(loadStories, module);
+
 ```
+#HSLIDE
+
+### TESTING
+
+- Structure : StoryShots (jestSnapshots)
+- Interaction (with Enzyme)
+- CSS testing et manual testing
+
+#HSLIDE
+
+### CONFIGURATION
+
+Babel, Webpack, css, ES2016
+
+#HSLIDE
+

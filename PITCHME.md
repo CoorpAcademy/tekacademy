@@ -9,9 +9,7 @@
 
 [npm i -g getstorybook](https://raw.githubusercontent.com/coorpacademy/tekacademy/storybook/assets/npmiStorybook.png)
 
-```
 cd my-repo
-```
 
 [getstorybook](https://raw.githubusercontent.com/coorpacademy/tekacademy/storybook/assets/getStorybook.png)
 
@@ -23,7 +21,7 @@ cd my-repo
 npm run storybook
 ```
 
-![storybook1](assets/storybook1.png)
+![storybook](assets/storybook.png)
 
 #HSLIDE
 

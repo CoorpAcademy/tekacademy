@@ -65,22 +65,9 @@ storiesOf('Button', module)
     <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
   ));
 ```
-#VSLIDE
 
-### Writing a story
+... Or load them all
 
-load all of them
-
-```
-import { configure } from '@kadira/storybook';
-
-function loadStories() {
-  require('../storybook');
-}
-
-configure(loadStories, module);
-
-```
 
 #VSLIDE
 

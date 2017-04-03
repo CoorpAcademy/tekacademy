@@ -32,9 +32,7 @@ npm run storybook
 - Automatic render
 - Action logger
 
-[STORYBOOK-DEMO](http://localhost:9009/)
-
-[COORP-DEMO](http://localhost:3004/)
+[LIVE ACTION](http://localhost:3004/)
 
 #VSLIDE
 

@@ -16,12 +16,15 @@ First released about 1 year ago
 ### Get! Easy :)
 
 ```
+$ npm i -g getstorybook
+
+$ cd my-repo
+
+$ getstorybook
+```
 [npm i -g getstorybook](assets/npmiStorybook.png)
 
-cd my-repo
-
 [getstorybook](assets/getStorybook.png)
-```
 
 
 #VSLIDE

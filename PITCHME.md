@@ -22,9 +22,14 @@ $ cd my-repo
 
 $ getstorybook
 ```
-[npm i -g getstorybook](assets/npmiStorybook.png)
 
-[getstorybook](assets/getStorybook.png)
+#VSLIDE
+
+![npmiStorybook](assets/npmiStorybook.png)
+
+#VSLIDE
+
+![getstorybook](assets/getStorybook.png)
 
 
 #VSLIDE

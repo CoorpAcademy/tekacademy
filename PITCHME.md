@@ -12,7 +12,7 @@ First released about 1 year ago
 
 
 #HSLIDE
-### What? How ? 
+### What? How? 
 ### Get! Easy :)
 
 ```
@@ -36,9 +36,7 @@ $ getstorybook
 
 ###Use
 
-```
-npm run storybook
-```
+$ npm run storybook
 
 ![storybook](assets/storybook.png)
 
@@ -50,6 +48,7 @@ npm run storybook
 - Every component with every fixtures
 - Automatic render (hot reloading)
 - Action logger
+- Documentation
 
 [LIVE ACTION](http://localhost:3004/)
 
@@ -59,10 +58,35 @@ npm run storybook
 
 it's all about stories
 
-Stories are substates of the component 
+Stories are substates of the component
+
 1 story === 1 fixtures
 
-![storyFixture](assets/storyFixture.png)
+```
+.add('with secondary', () => (
+  <Button
+    href={#}
+    target={_self}
+    light={false}
+    small={false}
+    secondary={false}
+  >
+    Coorpacademy
+  </Button>
+))
+```
+
+```
+export default {
+  props: {
+    submitValue: 'coorpacademy',
+    href: '#',
+    light: 'false',
+    small: 'false',
+    secondary: 'false'
+  }
+};
+```
 
 #VSLIDE
 

@@ -4,8 +4,10 @@
 
 #VSLIDE
 
-New player in tooling game
-(First released about 1 year ago)
+###New tool
+
+First released about 1 year ago
+
 [@kadira/storybook](https://www.npmjs.com/package/@kadira/storybook)
 
 
@@ -13,12 +15,14 @@ New player in tooling game
 ### What? How ? 
 ### Get! Easy :)
 
-
-[npm i -g getstorybook](https://raw.githubusercontent.com/coorpacademy/tekacademy/storybook/assets/npmiStorybook.png)
+```
+[npm i -g getstorybook](assets/npmiStorybook.png)
 
 cd my-repo
 
-[getstorybook](https://raw.githubusercontent.com/coorpacademy/tekacademy/storybook/assets/getStorybook.png)
+[getstorybook](assets/getStorybook.png)
+```
+
 
 #VSLIDE
 

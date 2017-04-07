@@ -2,6 +2,13 @@
 
 ![logobig](assets/logobig.png)
 
+#VSLIDE
+
+New player in tooling game
+(First released about 1 year ago)
+[@kadira/storybook](https://www.npmjs.com/package/@kadira/storybook)
+
+
 #HSLIDE
 ### What? How ? 
 ### Get! Easy :)
@@ -29,7 +36,7 @@ npm run storybook
 
 - Easy search
 - Every component with every fixtures
-- Automatic render
+- Automatic render (hot reloading)
 - Action logger
 
 [LIVE ACTION](http://localhost:3004/)
@@ -40,6 +47,7 @@ npm run storybook
 
 it's all about stories
 
+Stories are substates of the component 
 1 story === 1 fixtures
 
 ![storyFixture](assets/storyFixture.png)
@@ -47,8 +55,6 @@ it's all about stories
 #VSLIDE
 
 ### Writing a story
-
-One by one
 
 ```
 // file: src/stories/index.js
@@ -65,9 +71,6 @@ storiesOf('Button', module)
     <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
   ));
 ```
-
-... Or load them all
-
 
 #VSLIDE
 
@@ -87,6 +90,22 @@ storiesOf('Button', module)
   ))
 
 ```
+
+#VSLIDE
+
+###Documentation
+
+[React Storybook Info Addon](https://github.com/storybooks/react-storybook-addon-info)
+
+```
+'simple usage',
+  `
+    This is the basic usage with the button with providing a label to show the text.
+  `,
+  ...
+```
+
+![addonInfo](assets/addonInfo.png)
 
 
 #HSLIDE
@@ -117,4 +136,4 @@ Babel, Webpack, css, ES2016
 ### Links
 
 - [StoryBook doc](https://getstorybook.io/docs)
-- [ReactConf2017](https://www.youtube.com/watch?v=rMf3nDUfUpY&feature=youtu.be&t=4704)
+- [ReactConf2017](https://www.youtube.com/watch?v=PF0Vi-iIyoo)

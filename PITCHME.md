@@ -75,6 +75,7 @@ Stories are substates of the component
   </Button>
 ))
 ```
+#VSLIDE
 
 ```
 export default {
@@ -90,7 +91,7 @@ export default {
 
 #VSLIDE
 
-### Writing a story
+### Writing stories of my component 
 
 ```
 // file: src/stories/index.js
@@ -110,7 +111,7 @@ storiesOf('Button', module)
 
 #VSLIDE
 
-### Adding Actions
+###Actions Addon
 
 "Action" is an Storybook Addon
 
@@ -131,8 +132,6 @@ storiesOf('Button', module)
 
 ###Documentation
 
-[React Storybook Info Addon](https://github.com/storybooks/react-storybook-addon-info)
-
 ```
 'simple usage',
   `
@@ -148,10 +147,13 @@ storiesOf('Button', module)
 
 ### WHAT NOW ?
 
-- Overview on components
-- Better understanding
-- Testing each component
-- Exporting as a static app
+- Overview on components ✔
+- Better understanding ✔
+- Actions x
+- Link components x
+- Document x
+- Test each component x (enzyme ?)
+- Exporting as a static app x
 
 #HSLIDE
 

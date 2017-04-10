@@ -60,7 +60,7 @@ it's all about stories
 
 Stories are substates of the component
 
-1 story === 1 fixtures
+1 story === 1 fixture
 
 ```
 .add('with secondary', () => (
